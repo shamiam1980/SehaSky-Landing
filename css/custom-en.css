@@ -4,6 +4,7 @@
 
 .section-2 {
     direction: ltr;
+    background-image: url('/img/section2_bg_en.svg');
 }
 
 .section-2 .container,
