@@ -611,8 +611,10 @@ $(document).ready(function () {
   // SECTION ( 5 )
 
   // Redirect to UNA on clicking submit button
+  // NOTE Didn't work for mobile page until added in an internal script in mobile.html
   $('button.submit-button').click(function () {
-    document.location = "https://sehasky.com/main/index.php"
+    // document.location = "https://sehasky.com/main/index.php"
+    document.location = "https://sehasky.com/main/page/create-account"
   })
 
 

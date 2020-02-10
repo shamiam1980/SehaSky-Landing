@@ -1,0 +1,39 @@
+/* body {
+    font-family: 'Sniglet', 'McLaren', 'Quicksand', 'Comfortaa', sans-serif;
+} */
+
+.section-1 h2.main-title {
+    font-size: 4rem;
+}
+
+.section-2 {
+    direction: ltr;
+    background-image: url('/img/section2_bg_en.svg');
+}
+
+.section-2 .container,
+.section-2 .container p {
+    padding-right: 0;
+    padding-left: 2rem;
+}
+
+.section-3 {
+    direction: ltr;
+  }
+
+.section-3 .services-cards h1 {
+    font-size: 2.5rem;
+    padding-bottom: 5rem;
+}
+
+.path-slider__ara-text {
+    display: none;
+}
+
+.path-slider__eng-text {
+    display: block;
+}
+
+.section-5 h1 {
+    direction: ltr;
+}
