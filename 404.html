@@ -4,31 +4,46 @@
 <head>
   <meta charset="utf-8">
   <title>Page Not Found</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
-  <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-  <link rel="apple-touch-icon" href="/favicon-57.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- FavIcon -->
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="img/favicon/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="img/favicon/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="img/favicon/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16.png">
+  <link rel="apple-touch-icon" href="/img/favicon//favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon-180.png">
   <meta name="msapplication-TileColor" content="#FFFFFF">
-  <meta name="msapplication-TileImage" content="/favicon-144.png">
-  <meta name="msapplication-config" content="/browserconfig.xml">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <meta name="msapplication-TileImage" content="img/favicon/favicon-144.png">
+  <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+  <!-- Boilerplate CSS -->
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <!-- Import Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <!-- Import FontAwesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <!-- Horizontal Scroll CSS -->
+  <link rel="stylesheet" href="css/horizontal-scroll.css" />
+  <!-- FullPage -->
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+  <!-- PagePiling -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
+  <!-- Material Design Icons Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- My Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css" />
   <style>
     * {
       line-height: 1.2;
@@ -52,13 +67,19 @@
 
     h1 {
       color: #555;
-      font-size: 2em;
+      font-size: 4em !important;
       font-weight: 400;
     }
 
     p {
       margin: 0 auto;
-      width: 280px;
+      font-size: 2em !important;
+    }
+
+    img {
+      mix-blend-mode: multiply;
+      width: 300px;
+      margin-bottom: 5rem;
     }
 
     @media only screen and (max-width: 280px) {
@@ -78,6 +99,7 @@
 </head>
 
 <body>
+  <img class="logo" src="/img/header_logo-white-bg.png" alt="logo">
   <h1 class="title">Page Not Found</h1>
   <p class="subtitle-is-6">Sorry, but the page you were trying to view does not exist.</p>
 </body>

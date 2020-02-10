@@ -1,0 +1,23 @@
+section.section-2 {
+      background-color: #FFF04B !important;
+}
+
+.section-2 .content {
+      align-items: unset;
+      direction: ltr;
+}
+
+.section-2 .content img {
+      position: absolute;
+      bottom: 0;
+      max-height: 70%;
+}
+
+.section-2 h2.main-title {
+      text-align: center;
+      color: #395A90;
+      padding: 0 1rem;
+      font-size: 3rem;
+}
+
+

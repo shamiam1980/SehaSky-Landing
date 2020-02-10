@@ -8,18 +8,18 @@
         url("/fonts/ffhekaya-light-webfont.svg") format("svg");
 }
 
+@import url('https://fonts.googleapis.com/css?family=Changa:300,400,500,700|Quicksand:400,500,700&display=swap&subset=arabic');
+
 /* GENERAL */
 
 body {
-    font-family: 'FF Hekaya', 'Tajawal', sans-serif;
+    font-family: 'FF Hekaya', 'Changa', 'Quicksand', sans-serif;
 }
 
 .content {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
 }
 
@@ -29,6 +29,7 @@ h2.main-title {
     color: #07BEB8;
     margin-top: 0 !important;
     text-align: center;
+    padding: 0 2rem;
 }
 
 .arrow-down,
@@ -80,7 +81,7 @@ section.section-1 {
 
 .section-1 .tree {
     position: absolute;
-    top: -25vh;
+    top: -10vh;
     transform: scale(0.8);
 }
 
@@ -145,6 +146,7 @@ polygon {
     width: 50%;
     text-align: center;
     position: relative;
+    padding-top: 2rem;
 }
 
 /* .section-1 .right {
@@ -176,14 +178,32 @@ polygon {
 
 .section-1 a {
     display: inline-block;
-    border-radius: 15px;
+    border-radius: 2.2rem;
     outline: none;
-    padding: 15px;
-    width: 9rem;
-    font-family: 'Tajawal', sans-serif;
+    padding: 0.5rem;
+    width: 12rem;
+    height: 4.6rem;
     background-color: #8F3985;
     color: #fff;
     margin-top: 25px;
+    font-size: 2.2rem;
+    
+}
+
+a.english-page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem 2rem;
+    font-family: 'Quicksand';
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
 }
 
 .section-1 a:hover {
@@ -191,8 +211,10 @@ polygon {
     color: #fff;
 }
 
-.section-1 img {
-    width: 100%;
+.section-1 .left img.header_image {
+    position: absolute;
+    left: 0;
+    top: 15%;
 }
 
 /* SECTION ( 2 ) */
@@ -207,6 +229,11 @@ polygon {
     background-repeat: no-repeat;
 }
 
+.section-2 .content {
+    align-items: center;
+    justify-content: center;
+}
+
 .section-2 .container {
     padding-right: 2rem;
 }
@@ -214,6 +241,12 @@ polygon {
 .section-2 .main-title {
     text-align: unset;
 }
+
+.section-2 .container p {
+    padding-right: 2rem;
+    font-size: 3rem;
+}
+
 
 .section-2 .content img {
     max-height: 100%;
@@ -247,6 +280,7 @@ polygon {
 .services-cards p {
     text-align: center;
     padding: 0 1rem;
+    font-size: 1.4rem;
 }
 
 .services-cards h1 {
@@ -527,7 +561,24 @@ button.submit-button:hover {
     background-color: #752d6d !important;
 }
 
+/* REGISTER NOW */
+
+.section-5 .column {
+    text-align: center;
+}
+
+button.submit-button {
+    width: 50%;
+    font-size: 2rem;
+    top: 10vh;
+}
+
 /* SOCIAL */
+
+.section-5-social__container {
+    position: relative;
+    top: 10vh;
+}
 
 .section-5-social {
     display: flex;
@@ -547,6 +598,17 @@ button.submit-button:hover {
     color: #eee;
 }
 
+.section-5-social a {
+    color: #eee;
+}
+
+.section-5-social a:hover {
+    color: #fff;
+}
+
+.section-5-social.section-5-social__email span:hover {
+    color: #FFF04B;
+}
 
 .arrow-up {
     transform: scaleY(-1) translateY(0);
@@ -560,7 +622,7 @@ button.submit-button:hover {
 
 body{background:#ECF0F1}
 
-.preloader{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+.preloader{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);z-index: 100000;
   /*change these sizes to fit into your project*/
   width:100px;
   height:100px;
@@ -578,8 +640,6 @@ body{background:#ECF0F1}
   50%{transform:translate(160%, 160%)}
   75%{transform:translate(0, 160%)}
 }
-
-
 
 
 
