@@ -53,6 +53,10 @@ h2.main-title {
 }
 
 /* SECTION ( 4 ) */
+.section-4 .path-slider p {
+    font-size: 1.7rem;
+}
+
 
 .section-4 .path-slider__current-item .item__circle p {
     font-size: 2rem;
@@ -105,6 +109,10 @@ button {
         font-size: 1.8rem;
         top: -5rem;
         right: -20rem;
+    }
+
+    .section-4 .path-slider__item.path-slider__item--5.path-slider__current-item p.path-slider__eng-text {
+        right: -23rem;
     }
 
     .section-5 button.submit-button {
