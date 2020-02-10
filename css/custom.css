@@ -1,14 +1,15 @@
 /* Import FF Hekaya Arabic font */
 @font-face {
-    font-family: "ff_hekayalight";
-    src: url("/fonts/ffhekaya-light-webfont.woff") format("woff"),
-        url("/fonts/ffhekaya-light-webfont.woff2") format("woff2"),
-        url("/fonts/FFHekaya-Light.otf") format("opentype"),
-        url("/fonts/ffhekaya-light-webfont.ttf") format("truetype"),
-        url("/fonts/ffhekaya-light-webfont.svg") format("svg");
+    font-family: 'FF Hekaya';
+    src: url("../fonts/subset-FFHekaya-Light.woff") format("woff"),
+        url("../fonts/subset-FFHekaya-Light.woff2") format("woff2"),
+        url("../fonts/FFHekaya-Light.otf") format("opentype"),
+        url("../fonts/subset-FFHekaya-Light.ttf") format("truetype"),
+        url("../fonts/subset-FFHekaya-Light.svg") format("svg");
 }
 
-@import url('https://fonts.googleapis.com/css?family=Changa:300,400,500,700|Quicksand:400,500,700&display=swap&subset=arabic');
+/* NOTE: Google fonts are better loaded in HTML header than here using @import rule
+to be able to display correctly on android mobile devices */
 
 /* GENERAL */
 
@@ -521,7 +522,7 @@ h1.section-5-subtitle.section-5-subtitle__left {
 /* Contact Form */
 
 .input, .textarea, select, button {
-    font-family: 'FF Hekaya';
+    font-family: 'FF Hekaya', 'Changa', sans-serif;
 }
 
 .input:active, .input:focus, .is-active.input, .is-active.textarea, .is-focused.input, .is-focused.textarea, .select select.is-active, .select select.is-focused, .select select:active, .select select:focus, .textarea:active, .textarea:focus {
