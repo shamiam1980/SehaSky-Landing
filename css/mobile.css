@@ -7,17 +7,29 @@ section.section-2 {
       direction: ltr;
 }
 
+.section-2 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .section-2 .content img {
       position: absolute;
       bottom: 0;
       max-height: 70%;
+      z-index: 1;
 }
 
 .section-2 h2.main-title {
       text-align: center;
       color: #395A90;
       padding: 0 1rem;
-      font-size: 3rem;
+      font-size: 2rem;
+}
+
+.button.is-primary {
+      width: auto;
+      position: static;
 }
 
 

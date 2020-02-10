@@ -611,7 +611,7 @@ $(document).ready(function () {
   // SECTION ( 5 )
 
   // Redirect to UNA on clicking submit button
-  $('.section-5 .submit-button').click(function () {
+  $('button.submit-button').click(function () {
     document.location = "https://sehasky.com/main/index.php"
   })
 
