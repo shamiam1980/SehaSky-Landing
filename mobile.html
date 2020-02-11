@@ -7,7 +7,7 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- FavIcon -->
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
   <link rel="icon" sizes="16x16 32x32 64x64" href="img/favicon/favicon.ico">
   <link rel="icon" type="image/png" sizes="196x196" href="img/favicon/favicon-192.png">
   <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
@@ -34,8 +34,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
   <!-- Import FontAwesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <!-- Horizontal Scroll CSS -->
-  <link rel="stylesheet" href="css/horizontal-scroll.css" />
   <!-- FullPage -->
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
   <!-- PagePiling -->
@@ -46,17 +44,31 @@
   <link href="https://fonts.googleapis.com/css?family=Changa:300,400,500,700&display=swap&subset=arabic"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Turret+Road:300,400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sniglet&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap" rel="stylesheet">
   <!-- My Custom CSS -->
   <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/mediaqueries.css" />
+  <link rel="stylesheet" href="css/custom-en.css" />
   <link rel="stylesheet" href="css/mobile.css" />
 </head>
 
 <body>
 
+  <div class="preloader">
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+  </div>
+
   <!-- FullPage.js Plugin Markup -->
   <div id="pagepiling">
 
-    <!-- Coming Soon Markup -->
+    <!-- Coming Soon Markup v0.1 -->
 
     <!-- <section class="section section-2">
       <div class="content">
@@ -163,8 +175,24 @@
         </div>
       </div>
       <img class="arrow-down" src="/img/arrow-down.svg" alt="arrow-down">
-      <a class="english-page button is-info" href="/index-ar.html">ع</a>
+      <a class="english-page button is-info" href="/mobile-ar.html">ع</a>
     </section>
+
+    <!-- <section class="section section-2">
+      <div class="content">
+        <img src="/img/section-2_doctor.png" alt="doctor">
+        <div class="container">
+          <h2 class="main-title">What we offer?</h2>
+          <p class="subtitle">
+            SehaSky is the first platform in the Arab World that offers a wide range of medical
+            services for both doctors, patients and even normal users seeking medical and
+            healthcare general and specific knowledge
+          </p>
+        </div>
+      </div>
+
+      <img class="arrow-down" src="/img/arrow-down.svg" alt="arrow-down">
+    </section> -->
 
   </div>
 
@@ -187,9 +215,6 @@
       );
   </script>
   <!-- Vendors -->
-  <!-- Horizontal Scrolling | Scrolling Technique | Not used -->
-  <script src="/js/vendor/jquery.horizonScroll.js"></script>
-  <script src="/js/vendor/jquery.touchSwipe.js"></script>
   <!-- FullPage | Scrolling Technique | Not used -->
   <script type="text/javascript" src="js/vendor/fullpage.js"></script>
   <!-- PagePiling | Scrolling Technique -->
@@ -218,8 +243,8 @@
     })
   </script>
   <!-- My Custom JS -->
-  <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/plugins-mobile.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
