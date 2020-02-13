@@ -217,6 +217,7 @@ section {
 
     .section-1 .left img.header_image {
         width: 90%;
+        right: -10px;
     }
 
     /* .section-1 .right {
