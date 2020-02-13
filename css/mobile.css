@@ -205,8 +205,10 @@ section {
 
 @media screen and (max-width: 406px) {
     .section-1 .tree {
-        top: -22vw;
-        left: -18vh;
+        position: absolute;
+        top: -85px;
+        left: -150px;
+        transform: scale(0.4);
     }
 
     .section-1 .right {
