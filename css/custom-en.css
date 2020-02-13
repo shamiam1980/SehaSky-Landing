@@ -41,7 +41,9 @@ h2.main-title {
 
 .section-3 .services-cards h1 {
     font-size: 2.2rem;
-    padding-bottom: 3rem;
+    line-height: 1;
+    padding-top: 0.5rem;
+    padding-bottom: 5rem;
 }
 
 .section-3 .services-cards p {

@@ -1,16 +1,16 @@
 /* GENERAL */
 
 section {
-    margin: 0;
-    padding: 0;  
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
 }
 
 /* SECTION  ( 1 ) */
 
-section.section-1 {
-    padding: 0;
-    position: relative !important;
-}
+/* .section-1 .wave-1, .section-1 .wave-2 {
+    position: fixed;
+} */
 
 .section-1 .left {
     padding-top: 20%;
@@ -86,6 +86,8 @@ section.section-1 {
 
 /* MEDIA QUERIES */
 
+/* SECTION ( 1 ) */
+
 @media screen and (max-width: 767px) {
     .section-1 .wave-1, .section-1 .wave-2 {
         top: -35%;
@@ -153,4 +155,143 @@ section.section-1 {
     
 }
 
+@media screen and (max-width: 467px) {
+    .section-1 .wave-1, .section-1 .wave-2 {
+        transform: scaleX(2);
+        top: -46%;
+    }
+
+    .section-1 .right .logo {
+        transform-origin: center;
+    }
+
+    .section-1 .right h1 {
+        margin-top: 0;
+    }
+
+    .section-1 .right h2.main-title {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+    .section-1 .wave-1, .section-1 .wave-2 {
+        transform: scaleX(1.5);
+        top: -45%;
+    }
+
+    .section-1 .left {
+        padding-bottom: 0;
+    }
+
+    /* .section-1 .right {
+        padding-top: 0;
+    } */
+
+    .section-1 .right .logo {
+        transform-origin: center;
+    }
+
+    .section-1 .right h1 {
+        margin-top: 0;
+    }
+
+    .section-1 .right h2.main-title {
+        font-size: 1.7rem;
+    }
+
+}
+
+@media screen and (max-width: 406px) {
+    .section-1 .tree {
+        top: -22vw;
+        left: -18vh;
+    }
+
+    .section-1 .right {
+        padding-top: 0;
+    }
+
+    .section-1 .left img.header_image {
+        width: 90%;
+    }
+
+    /* .section-1 .right {
+        top: -3rem;
+    } */
+
+    .section-1 .right h2.main-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    .section-1 .right h2.main-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 366px) {
+    .section-1 .right h2.main-title {
+        font-size: 1.4rem;
+    }
+
+    .section-1 a.know-more_link {
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .section-1 .right h2.main-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* SECTION ( 2 ) */
+
+@media screen and (max-width: 656px) {
+    .section-2 .container p {
+        font-size: 1.8rem;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .section-2 .container p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 406px) {
+    .section-2 .content img {
+        max-height: 55%;
+    }
+
+    .section-2 h2.main-title {
+        font-size: 2.5rem;
+        padding-top: 1rem;
+    }
+    
+    .section-2 .container p {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .section-2 .container p {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .section-2 h2.main-title {
+        font-size: 1.5rem;
+        padding-top: 0;
+    }
+
+}
 
