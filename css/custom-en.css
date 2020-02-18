@@ -25,6 +25,7 @@ h2.main-title {
 .section-2 {
     direction: ltr;
     background-image: url('/img/section2_bg_en.svg');
+    background-position: -3px;
 }
 
 .section-2 .container,
@@ -47,7 +48,7 @@ h2.main-title {
 }
 
 .section-3 .services-cards p {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .section-3 .services-card h1.online-booking {

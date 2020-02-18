@@ -498,7 +498,7 @@ div {
     display: none;
   }
 
-  .section-4 .path-slider__current-item .item__circle p.path-slider__ara-text {
+  .section-4 .path-slider__current-item .item__circle p.path-slider-text {
     display: block;
   }
 
@@ -514,7 +514,7 @@ div {
   }
 
   .path-slider {
-    top: -120px;
+    top: -100px;
   }
 
   .item__circle {
