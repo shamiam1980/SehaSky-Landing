@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>SehaSky :: First Medical Community in the Arab World</title>
+  <title>صحة سكاي :: أول مجتمع طبي على الإنترنت في الوطن العربي</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- FavIcon -->
@@ -35,11 +35,13 @@
   <!-- Import FontAwesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <!-- FullPage -->
-  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/fullpage.css" /> -->
   <!-- PagePiling -->
-  <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" /> -->
   <!-- Material Design Icons Font -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- SwiperJS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <!-- Import Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Changa:300,400,500,700&display=swap&subset=arabic"
     rel="stylesheet">
@@ -55,7 +57,7 @@
   <link rel="stylesheet" href="css/mobile.css" />
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
 
   <div class="preloader">
     <hr />
@@ -65,19 +67,19 @@
   </div>
 
   <!-- FullPage.js Plugin Markup -->
-  <div id="pagepiling">
+  <div id="no-pagepiling">
 
     <!-- Coming Soon Markup v0.1 -->
 
     <!-- <section class="section section-2">
-      <div class="content">
-        <img src="/img/section-2_doctor.png" alt="doctor">
-        <div class="container">
-          <h2 class="main-title">Mobile version is coming very soon! Register now to SehaSky</h2>
-          <button class="button submit-button is-primary">Register Now</button>
-        </div>
-      </div>
-    </section> -->
+			<div class="content">
+				<img src="/img/section-2_doctor.png" alt="doctor">
+				<div class="container">
+					<h2 class="main-title">Mobile version is coming very soon! Register now to SehaSky</h2>
+					<button class="button submit-button is-primary">Register Now</button>
+				</div>
+			</div>
+		</section> -->
 
     <section class="section section-1">
       <svg preserveAspectRatio="none" width="1096px" height="622px" viewBox="0 0 1096 622" class="wave-1">
@@ -157,7 +159,7 @@
 
               <radialGradient id="shadow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
                 <stop offset="0%" style="stop-color:#666;
-             stop-opacity:0.7" />
+						 stop-opacity:0.7" />
                 <stop offset="100%" style="stop-color:#666;stop-opacity:0" />
               </radialGradient>
             </svg>
@@ -173,9 +175,216 @@
           </a>
         </div>
       </div>
-      <img class="arrow-down" src="/img/arrow-down.svg" alt="arrow-down">
       <a class="english-page button is-info" href="/mobile.html">EN</a>
     </section>
+
+    <section class="section section-2">
+      <div class="content">
+        <img src="/img/section-2_doctor.png" alt="doctor">
+        <div class="container">
+          <h2 class="main-title">ماذا نقدم؟</h2>
+          <p class="subtitle">
+            صحة سكاي هي أول منصة في العالم العربي توفر مجموعة كبيرة من الخدمات الطبية لكل من الأطباء، المرضى، و
+            أيضاً
+            مستخدم الإنترنت العادي الباحث عن معلومة طبية عامة أو حتى متخصصة أو مهتم بالصحة العامة
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-3">
+      <div class="services-container">
+        <h2 class="main-title services-title">خدماتنا</h2>
+        <div class="services-cards">
+          <div class="services-card services-card-1">
+            <div class="services-card__wrapper">
+              <img src="/img/section3-card-icon-1.png" alt="card1">
+              <h1>السجل الطبي الإلكتروني</h1>
+              <p>لأول مرة في الوطن العربي، يمكن لمستخدم صحة سكاي أن يحتفظ بسجله الطبي بكل خصوصية واستعراضه لاحقاً
+                في شكل
+                ترتيب زمني timeline مما يوفر الكثير من الوقت</p>
+            </div>
+          </div>
+          <div class="services-card services-card-2">
+            <div class="services-card__wrapper">
+              <img src="/img/section3-card-icon-2.png" alt="card2">
+              <h1>شبكة تواصل طبية</h1>
+              <p>لأول مرة في الوطن العربي، يمكن لمستخدم صحة سكاي متابعة المحتوى المنشور بواسطة الأطباء الذين يثق
+                بهم</p>
+            </div>
+          </div>
+          <div class="services-card services-card-3">
+            <div class="services-card__wrapper">
+              <img src="/img/section3-card-icon-3.png" alt="card3">
+              <h1 class="online-booking">حجز المواعيد الإلكتروني</h1>
+              <p>يمكن لمستخدم صحة سكاي حجز موعد مع طبيبه المفضل عبر صحة سكاي بكل سرعة وسهولة وثقة</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add Swiper Scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+  </div>
+  </section>
+
+  <section class="section section-4">
+    <div class="section-4__wrapper">
+      <h2 class="main-title section-4-title">مميزات منصة صحة سكاي</h2>
+      <div id="path-slider" class="path-slider">
+        <!-- Slider items -->
+        <a href="#path-slider" class="path-slider__item path-slider__item--1">
+          <div class="item__circle">
+            <p class="path-slider__ara-text">
+              تابع منشورات أطبائك المفضلين وتفاعل معها وشاركها لدائرة أصدقائك
+            </p>
+            <p class="path-slider__eng-text" dir="ltr" lang="en">Save and Share your most trusted doctors in a
+              click!
+            </p>
+          </div>
+        </a>
+        <a href="#path-slider" class="path-slider__item path-slider__item--2">
+          <div class="item__circle">
+            <p class="path-slider__ara-text">
+              تواصل مع طبيبك المفضل
+            </p>
+            <p class="path-slider__eng-text" dir="ltr" lang="en">Save and Share your most trusted doctors in a
+              click!
+            </p>
+          </div>
+        </a>
+        <a href="#path-slider" class="path-slider__item path-slider__item--3">
+          <div class="item__circle">
+            <p class="path-slider__ara-text">
+              رشح طبيبك المفضل لأصدقائك
+            </p>
+            <p class="path-slider__eng-text" dir="ltr" lang="en">Save and Share your most trusted doctors in a
+              click!
+            </p>
+          </div>
+        </a>
+        <a href="#path-slider" class="path-slider__item path-slider__item--4">
+          <div class="item__circle">
+            <p class="path-slider__ara-text">
+              احتفظ بسجلك الطبي بكل سهولة وأمان
+            </p>
+            <p class="path-slider__eng-text" dir="ltr" lang="en">Save and Share your most trusted doctors in a
+              click!
+            </p>
+          </div>
+        </a>
+        <a href="#path-slider" class="path-slider__item path-slider__item--5">
+          <div class="item__circle">
+            <p class="path-slider__ara-text">
+              تابع أطبائك المفضلين ورشحهم لأصدقائك بضغطة زر
+            </p>
+            <p class="path-slider__eng-text" dir="ltr" lang="en">Save and Share your most trusted doctors in a
+              click!
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-5">
+    <svg preserveAspectRatio="none" width="1096px" height="622px" viewBox="0 0 1096 622" class="section-5-svg-bg">
+      <defs>
+        <linearGradient x1="100.753581%" y1="90.2476521%" x2="-5.37174479%" y2="-5.36183475%" id="linearGradient-1">
+          <stop stop-color="#65ACFC" offset="0%"></stop>
+          <stop stop-color="#4593EF" offset="44.6269133%"></stop>
+          <stop stop-color="#2F76CB" offset="82.1747449%"></stop>
+          <stop stop-color="#2E71C1" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <g id="Main" stroke="none" stroke-width="1" fill="#C8EB00" fill-rule="evenodd" opacity="0.880264946">
+        <g id="Tech-page" fill="#8F3985">
+          <!-- old curve color = #07BEB8 -->
+          <path
+            d="M-2,498.44993 C-2,498.44993 267.537793,372.610458 638,531.680364 C968.462207,690.750269 1055.667,611.414642 1198,498.44993 L1198,0 L-2,0 C-2,332.299954 -2,498.44993 -2,498.44993 Z"
+            id="Stroke-5-Copy"></path>
+        </g>
+      </g>
+    </svg>
+    <div class="container">
+      <h2 class="main-title section-5-title">اشترك في صحة سكاي</h2>
+      <div class="columns ">
+        <div class="column is-one-third section-5-right">
+          <h1 class="section-5-subtitle section-5-subtitle__right">كن أول المشتركين</h1>
+          <!-- <form action="https://formspree.io/xoqdnyjv" method="POST">
+
+			 <div class="field">
+				 <div class="control has-icons-left has-icons-right">
+					 <input class="input is-large" type="text" placeholder="الاسم" name="name" required>
+					 <span class="icon is-large is-right">
+						 <i class="material-icons">person</i>
+					 </span>
+				 </div>
+			 </div>
+
+			 <div class="field">
+				 <div class="control has-icons-left has-icons-right">
+					 <input class="input is-large" type="email" placeholder="البريد الإلكتروني" value="" name="email"
+						 required>
+					 <span class="icon is-small is-right">
+						 <i class="material-icons">email</i>
+					 </span>
+				 </div>
+			 </div>
+
+			 <div class="field">
+				 <div class="control has-icons-left has-icons-right is-expanded">
+					 <div class="select is-fullwidth is-large">
+						 <select name="doctor_user_select" required>
+							 <option>طبيب / مستخدم عادي</option>
+							 <option>طبيب</option>
+							 <option>مستخدم عادي</option>
+						 </select>
+					 </div>
+					 <span class="icon is-small is-right">
+						 <img class="doctor-user-icon" src="/img/section5-docotuser-icon.png" alt="doctor-user-select">
+					 </span>
+				 </div>
+			 </div>
+
+			 <div class="field">
+				 <div class="control has-icons-left has-icons-right">
+					 <textarea class="textarea is-large" placeholder="الرسالة"></textarea>
+				 </div>
+			 </div>
+
+			 <div class="control">
+				 <button class="button submit-button is-primary">أرسل</button>
+			 </div>
+		 </form> -->
+          <button class="button submit-button is-primary">سجل الآن</button>
+        </div>
+        <div class="column is-one-fifth section-5-right"></div>
+        <div class="column is-one-third section-5-left">
+          <h1 class="section-5-subtitle section-5-subtitle__left">أو تواصل معنا عبر الوسائل الآتية</h1>
+          <div class="section-5-social__container">
+            <div class="section-5-social section-5-social__email">
+              <i class="far fa-envelope fa-3x"></i>
+              <span>info@sehasky.com</span>
+            </div>
+            <div class="section-5-social section-5-social__facebook">
+              <i class="fab fa-facebook-square fa-3x"></i>
+              <span><a href="https://www.facebook.com/SehaSky.Egy/">/sehaskyegy</a></span>
+            </div>
+            <!-- <div class="section-5-social section-5-social__twitter">
+				 <i class="fab fa-twitter-square fa-3x"></i>
+				 <span>/sehasky</span>
+			 </div>
+			 <div class="section-5-social section-5-social__instagram">
+				 <i class="fab fa-instagram fa-3x"></i>
+				 <span>/sehaskyegy</span>
+			 </div> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <img class="arrow-up" src="/img/arrow-down.svg" alt="arrow-up">
+  </section>
 
   </div>
 
@@ -183,10 +392,8 @@
 
 
 
-
-
-
   <!-- Scripts -->
+
   <!-- HTML Boilerplate -->
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -199,9 +406,9 @@
   </script>
   <!-- Vendors -->
   <!-- FullPage | Scrolling Technique | Not used -->
-  <script type="text/javascript" src="js/vendor/fullpage.js"></script>
+  <!-- <script type="text/javascript" src="js/vendor/fullpage.js"></script> -->
   <!-- PagePiling | Scrolling Technique -->
-  <script type="text/javascript" src="/js/vendor/jquery.pagepiling.js"></script>
+  <!-- <script type="text/javascript" src="/js/vendor/jquery.pagepiling.js"></script> -->
   <!-- Anime.js | Section 1 Waves & Section 4 Slider -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.0/anime.min.js"></script>
   <!-- Path Slider | Section 4 Slider-->
@@ -218,6 +425,11 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <!-- Touch Swipe | Section 4 Slider Addon -->
+  <script type="text/javascript" src="js/vendor/jquery.touchSwipe.min.js"></script>
+  <!-- Swiper JS | Section 3 Cards -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
   <script>
     // Redirect to UNA on clicking submit button
     $('button.submit-button').click(function () {

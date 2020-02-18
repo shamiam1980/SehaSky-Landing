@@ -42,38 +42,38 @@ $(document).ready(function () {
   // VENDOR
 
   // PagPiling.js Plugin Init
-  $('#pagepiling').pagepiling({
-    direction: 'vertical',
-    navigation: false,
-    sectionsColor: ['#FFF', '#FFF04B', '#EEE', '#07BEB8', '#EEE']
-  });
+  // $('#pagepiling').pagepiling({
+  //   direction: 'vertical',
+  //   navigation: false,
+  //   sectionsColor: ['#FFF', '#FFF04B', '#EEE', '#07BEB8', '#EEE']
+  // });
 
 
   // Anime.js Init [ Section-1 Moving waves ]
-  anime({
-    targets: '.section-1 .wave-1 path',
-    d: [
-      'M-2,468.451169 C-2,468.451169 252.334287,673.993002 573.411472,523.524647 C894.488657,373.056293 1101,542.009898 1198,488.147432 L1198,1 L-2,1 C-2,312.634113 -2,468.451169 -2,468.451169 Z',
-      'M-2,468.451169 C-2,468.451169 349.117562,347.188698 538.784664,409.698879 C728.451765,472.209061 1101,542.009898 1198,488.147432 L1198,1 L-2,1 C-2,312.634113 -2,468.451169 -2,468.451169 Z'
-    ],
-    duration: 10000,
-    loop: true,
-    easing: 'easeInOutSine',
-    direction: 'alternate'
-  });
+  // anime({
+  //   targets: '.section-1 .wave-1 path',
+  //   d: [
+  //     'M-2,468.451169 C-2,468.451169 252.334287,673.993002 573.411472,523.524647 C894.488657,373.056293 1101,542.009898 1198,488.147432 L1198,1 L-2,1 C-2,312.634113 -2,468.451169 -2,468.451169 Z',
+  //     'M-2,468.451169 C-2,468.451169 349.117562,347.188698 538.784664,409.698879 C728.451765,472.209061 1101,542.009898 1198,488.147432 L1198,1 L-2,1 C-2,312.634113 -2,468.451169 -2,468.451169 Z'
+  //   ],
+  //   duration: 10000,
+  //   loop: true,
+  //   easing: 'easeInOutSine',
+  //   direction: 'alternate'
+  // });
 
-  anime({
-    targets: '.section-1 .wave-2 path',
-    d: [
-      'M-2,498.44993 C-2,498.44993 246.658598,729.597061 618,531.680364 C989.341402,333.763666 1055.667,611.414642 1198,498.44993 L1198,0 L-2,0 C-2,332.299954 -2,498.44993 -2,498.44993 Z',
-      'M-2,498.44993 C-2,498.44993 131.917312,347.531383 482.379519,506.601288 C832.841726,665.671193 1015.06558,314.245395 1196,385.541768 L1198,0 L-2,0 C-2,332.299954 -2,498.44993 -2,498.44993 Z',
-      'M-2,498.44993 C-2,498.44993 267.537793,372.610458 618,531.680364 C968.462207,690.750269 1055.667,611.414642 1198,498.44993 L1198,0 L-2,0 C-2,332.299954 -2,498.44993 -2,498.44993 Z'
-    ],
-    duration: 80000,
-    loop: true,
-    easing: 'easeInOutSine',
-    direction: 'alternate'
-  });
+  // anime({
+  //   targets: '.section-1 .wave-2 path',
+  //   d: [
+  //     'M-2,498.44993 C-2,498.44993 246.658598,729.597061 618,531.680364 C989.341402,333.763666 1055.667,611.414642 1198,498.44993 L1198,0 L-2,0 C-2,332.299954 -2,498.44993 -2,498.44993 Z',
+  //     'M-2,498.44993 C-2,498.44993 131.917312,347.531383 482.379519,506.601288 C832.841726,665.671193 1015.06558,314.245395 1196,385.541768 L1198,0 L-2,0 C-2,332.299954 -2,498.44993 -2,498.44993 Z',
+  //     'M-2,498.44993 C-2,498.44993 267.537793,372.610458 618,531.680364 C968.462207,690.750269 1055.667,611.414642 1198,498.44993 L1198,0 L-2,0 C-2,332.299954 -2,498.44993 -2,498.44993 Z'
+  //   ],
+  //   duration: 80000,
+  //   loop: true,
+  //   easing: 'easeInOutSine',
+  //   direction: 'alternate'
+  // });
 
   // Tree Animation [ Section-1 Moving clouds behind tree ]
 
@@ -182,8 +182,101 @@ $(document).ready(function () {
     .fromTo(shadows, .3, { autoAlpha: 0 }, { autoAlpha: 1 }, 'label1+=1')
     .staggerFromTo(text, 1, textStaggerFrom, textStaggerTo, .2, 'label1+=2');
 
+  // SECTION ( 3 )
 
+  // Touch Swipe Plugin Injection to slider [ width < 520px ]
 
+  // $(".services-card.services-card-2").swipe({
+  //   //Generic swipe handler for all directions
+  //   swipeLeft: function (event, direction, distance, duration, fingerCount, fingerData) {
+  //     console.log('Card swiped left!');
+  //     $('.services-card.services-card-1').css('transform', 'translateX(-100%)');
+  //     $(this).css('transform', 'translateX(-100%)');
+  //     $('.services-card.services-card-3').css('transform', 'translateX(-100%)');
+  //   }
+  // });
+
+  // $(".services-card.services-card-2").swipe({
+  //   //Generic swipe handler for all directions
+  //   swipeRight: function (event, direction, distance, duration, fingerCount, fingerData) {
+  //     console.log('Card swiped right!');
+  //     $('.services-card.services-card-1').css('transform', 'translateX(100%)');
+  //     $(this).css('transform', 'translateX(100%)');
+  //     $('.services-card.services-card-3').css('transform', 'translateX(100%)');
+  //   }
+  // });
+
+  // $(".services-card.services-card-1").swipe({
+  //   //Generic swipe handler for all directions
+  //   swipeRight: function (event, direction, distance, duration, fingerCount, fingerData) {
+  //     console.log('Card swiped right!');
+  //     $(this).css('transform', 'translateX(0)');
+  //     $('.services-card.services-card-2').css('transform', 'translateX(0)');
+  //     $('.services-card.services-card-3').css('transform', 'translateX(0)');
+  //   }
+  // });
+
+  // $(".services-card.services-card-3").swipe({
+  //   //Generic swipe handler for all directions
+  //   swipeLeft: function (event, direction, distance, duration, fingerCount, fingerData) {
+  //     console.log('Card swiped left!');
+  //     $(this).css('transform', 'translateX(0)');
+  //     $('.services-card.services-card-1').css('transform', 'translateX(0)');
+  //     $('.services-card.services-card-2').css('transform', 'translateX(0)');
+  //   }
+  // });
+
+  // SwiperJS Init
+  function initSwiperJS() {
+    // Set the matchMedia
+    if (window.matchMedia("(max-width: 520px)").matches) {
+      // Changes when we reach the min-width
+      $('.services-container').addClass('swiper-container');
+      $('.services-cards').addClass('swiper-wrapper');
+      $('.services-card').addClass('swiper-slide');
+
+      var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        slidesPerView: 1.1,
+        spaceBetween: 0,
+        // centeredSlides: true,
+        loop: true,
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          draggable: true,
+        },
+        breakpoints: {
+          480: {
+            slidesPerView: 1.1,
+            spaceBetween: 0,
+          },
+          440: {
+            slidesPerView: 1.3,
+            spaceBetween: 0,
+          },
+          410: {
+            slidesPerView: 1.2,
+            spaceBetween: 0,
+          },
+          360: {
+            slidesPerView: 1.3,
+            spaceBetween: 0,
+          },
+          320: {
+            slidesPerView: 1.2,
+            spaceBetween: 0,
+          },
+        }
+      });
+    }
+  }
+
+  /* Call the function */
+  initSwiperJS();
+
+  /* Attach the function to the resize event listener */
+  window.addEventListener("resize", initSwiperJS, false);
 
 
   // SECTION ( 4 ) -- Path Slider Plugin
@@ -194,121 +287,139 @@ $(document).ready(function () {
   // - controlSep: Bigger values of this parameter will add more curvature, and vice versa
   // - curves: Number of curves (iterations) to draw
 
-  // function getSinPath(options) {
-  //   var _options = options || {};
-  //   var _width = _options.width || window.innerWidth;
-  //   var _height = _options.height || window.innerHeight;
-  //   var _addWidth = _options.addWidth || 100;
-  //   var _controlSep = _options.controlSep || 50;
-  //   var _curves = _options.curves || 2;
+  function getSinPath(options) {
+    var _options = options || {};
+    var _width = _options.width || window.innerWidth;
+    var _height = _options.height || window.innerHeight;
+    var _addWidth = _options.addWidth || 100;
+    var _controlSep = _options.controlSep || 50;
+    var _curves = _options.curves || 2;
 
-  //   var x = - _addWidth;
-  //   var y = _height / 2;
-  //   var amplitudeX = (_width + _addWidth * 2) / _curves;     // X distance among curve points
-  //   var amplitudeY = _height / 3;                            // Y distance between points and control points
+    var x = - _addWidth;
+    var y = _height / 2;
+    var amplitudeX = (_width + _addWidth * 2) / _curves;     // X distance among curve points
+    var amplitudeY = _height / 3;                            // Y distance between points and control points
 
-  //   var path = [];
-  //   path.push('M', x, y);
-  //   var alternateY = true;
-  //   var controlY;
-  //   for (var i = 0; i < _curves; i++) {
-  //     controlY = alternateY ? y - amplitudeY : y + amplitudeY;
-  //     if (i === 0) {
-  //       path.push('C', x + (amplitudeX / 2 - _controlSep), controlY);
-  //     } else {
-  //       path.push('S');
-  //     }
-  //     path.push(x + (amplitudeX / 2 + _controlSep), controlY);
-  //     path.push(x + amplitudeX, y);
-  //     x += amplitudeX;
-  //     alternateY = !alternateY;
-  //   }
+    var path = [];
+    path.push('M', x, y);
+    var alternateY = true;
+    var controlY;
+    for (var i = 0; i < _curves; i++) {
+      controlY = alternateY ? y - amplitudeY : y + amplitudeY;
+      if (i === 0) {
+        path.push('C', x + (amplitudeX / 2 - _controlSep), controlY);
+      } else {
+        path.push('S');
+      }
+      path.push(x + (amplitudeX / 2 + _controlSep), controlY);
+      path.push(x + amplitudeX, y);
+      x += amplitudeX;
+      alternateY = !alternateY;
+    }
 
-  //   return path.join(' ');
-  // }
+    return path.join(' ');
+  }
 
-  // (function () {
+  (function () {
 
-  //   // Creating SVG and path elements and insert to DOM
+    // Creating SVG and path elements and insert to DOM
 
-  //   var svgNS = 'http://www.w3.org/2000/svg';
-  //   var svgEl = document.createElementNS(svgNS, 'svg');
-  //   var pathSlider = document.getElementById('path-slider');
+    var svgNS = 'http://www.w3.org/2000/svg';
+    var svgEl = document.createElementNS(svgNS, 'svg');
+    var pathSlider = document.getElementById('path-slider');
 
-  //   // MYCODE -- Add class to svg to use it properly in CSS
-  //   svgEl.setAttribute('class', 'path-slider__svgpath');
+    // MYCODE -- Add class to svg to use it properly in CSS
+    svgEl.setAttribute('class', 'path-slider__svgpath');
 
-  //   var pathEl = document.createElementNS(svgNS, 'path');
-  //   // The `getSinPath` function return the `path` in String format
-  //   pathEl.setAttribute('d', getSinPath());
-  //   pathEl.setAttribute('class', 'path-slider__path');
+    var pathEl = document.createElementNS(svgNS, 'path');
+    // The `getSinPath` function return the `path` in String format
+    pathEl.setAttribute('d', getSinPath());
+    pathEl.setAttribute('class', 'path-slider__path');
 
-  //   svgEl.appendChild(pathEl);
-  //   pathSlider.appendChild(svgEl);
+    svgEl.appendChild(pathEl);
+    pathSlider.appendChild(svgEl);
 
 
-  //   // Changing `background-image`
-  //   // Firstly, saving the computed `background` of each item, as these are defined in CSS
-  //   // When item is selected, the `background` is set accordingly
+    // Changing `background-image`
+    // Firstly, saving the computed `background` of each item, as these are defined in CSS
+    // When item is selected, the `background` is set accordingly
 
-  //   var items = document.querySelectorAll('.path-slider__item');
-  //   var images = [];
-  //   for (var j = 0; j < items.length; j++) {
-  //     images.push(getComputedStyle(items[j].querySelector('.item__circle')).getPropertyValue('background-image'));
-  //   }
+    var items = document.querySelectorAll('.path-slider__item');
+    var images = [];
+    for (var j = 0; j < items.length; j++) {
+      images.push(getComputedStyle(items[j].querySelector('.item__circle')).getPropertyValue('background-image'));
+    }
 
-  //   var imgAnimation;
-  //   var lastIndex;
-  //   var setImage = function (index) {
-  //     if (imgAnimation) {
-  //       imgAnimation.pause();
-  //       sliderContainer.style['background-image'] = images[lastIndex];
-  //       sliderContainerBackground.style['opacity'] = 0;
-  //     }
-  //     lastIndex = index;
-  //     sliderContainerBackground.style['background-image'] = images[index];
+    var imgAnimation;
+    var lastIndex;
+    var setImage = function (index) {
+      if (imgAnimation) {
+        imgAnimation.pause();
+        sliderContainer.style['background-image'] = images[lastIndex];
+        sliderContainerBackground.style['opacity'] = 0;
+      }
+      lastIndex = index;
+      sliderContainerBackground.style['background-image'] = images[index];
 
-  //     imgAnimation = anime({
-  //       targets: sliderContainerBackground,
-  //       opacity: 1,
-  //       easing: 'linear'
-  //     });
+      imgAnimation = anime({
+        targets: sliderContainerBackground,
+        opacity: 1,
+        easing: 'linear'
+      });
 
-  //   };
+    };
 
-  //   // Adding the extra element needed to fade the images smoothly
-  //   // Also set the image for the initial current item (the first one)
+    // Adding the extra element needed to fade the images smoothly
+    // Also set the image for the initial current item (the first one)
 
-  //   var sliderContainer = document.querySelector('.path-slider');
-  //   var sliderContainerBackground = document.createElement('div');
-  //   sliderContainerBackground.setAttribute('class', 'path-slider__background');
-  //   setImage(0);
-  //   sliderContainer.appendChild(sliderContainerBackground);
+    var sliderContainer = document.querySelector('.path-slider');
+    var sliderContainerBackground = document.createElement('div');
+    sliderContainerBackground.setAttribute('class', 'path-slider__background');
+    setImage(0);
+    sliderContainer.appendChild(sliderContainerBackground);
 
-  //   // Initializing the slider
+    // Initializing the slider
 
-  //   var options = {
-  //     startLength: 'center',
-  //     paddingSeparation: 100,
-  //     easing: 'easeOutCubic',
-  //     begin: function (params) {
-  //       // Item get selected, then set the `background` accordingly
-  //       if (params.selected) {
-  //         setImage(params.index);
-  //       }
-  //     }
-  //   };
+    var options = {
+      startLength: 'center',
+      paddingSeparation: 100,
+      easing: 'easeOutCubic',
+      begin: function (params) {
+        // Item get selected, then set the `background` accordingly
+        if (params.selected) {
+          setImage(params.index);
+        }
+      }
+    };
 
-  //   var slider = new PathSlider(pathEl, '.path-slider__item', options);
+    var slider = new PathSlider(pathEl, '.path-slider__item', options);
 
-  //   // Regenerate the SVG `path` and update items position on `resize` event (responsive behavior)
+    // Regenerate the SVG `path` and update items position on `resize` event (responsive behavior)
 
-  //   window.addEventListener('resize', function () {
-  //     pathEl.setAttribute('d', getSinPath());
-  //     slider.updatePositions();
-  //   });
+    window.addEventListener('resize', function () {
+      pathEl.setAttribute('d', getSinPath());
+      slider.updatePositions();
+    });
 
-  // })();
+    // Touch Swipe Plugin Injection to slider
+
+    $(".section-4__wrapper").swipe({
+      //Generic swipe handler for all directions
+      swipeLeft: function (event, direction, distance, duration, fingerCount, fingerData) {
+        console.log('Swiped left!');
+        slider.selectPrevItem();
+      }
+    });
+
+    $(".section-4__wrapper").swipe({
+      //Generic swipe handler for all directions
+      swipeRight: function (event, direction, distance, duration, fingerCount, fingerData) {
+        console.log('Swiped right!');
+        slider.selectNextItem();
+      }
+    });
+
+  })();
 
   // SECTION ( 5 ) -- Contact Form
 
@@ -543,19 +654,19 @@ $(document).ready(function () {
 
   /* __________________________________________________________________________________________________________ */
 
-  // CUSTOM
+  // MY CUSTOM
 
   // GENERAL
 
   // Jump to next Section on arrow click
-  $(".arrow-down").click(function () {
-    $.fn.pagepiling.moveSectionDown();
-  });
+  // $(".arrow-down").click(function () {
+  //   $.fn.pagepiling.moveSectionDown();
+  // });
 
-  // Jump to first Section on last arrow click
-  $(".arrow-up").click(function () {
-    $.fn.pagepiling.moveTo(1);
-  });
+  // // Jump to first Section on last arrow click
+  // $(".arrow-up").click(function () {
+  //   $.fn.pagepiling.moveTo(1);
+  // });
 
   // SECTION ( 1 )
 
@@ -578,6 +689,21 @@ $(document).ready(function () {
       $('.services-card__wrapper').removeClass('services-card__wrapper-clicked');
     }, 300);
   });
+
+  // Set section-3 height to match cards height to compensate transform scale effect ( Vertical cards layout )
+
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    $('.section-3').height($('.services-cards').outerHeight() * 0.8 + $('.services-title').outerHeight() + 40);
+  }
+
+  // if (window.matchMedia("(max-width: 520px)").matches) {
+  //   $('.section-3').height($('.services-cards').outerHeight() * 0.6 + $('.services-title').outerHeight() + 40);
+  // }
+
+  // if (window.matchMedia("(max-width: 380px)").matches) {
+  //   $('.section-3').height($('.services-cards').outerHeight() * 0.5 + $('.services-title').outerHeight() + 40);
+  // }
+
 
   // SECTION ( 4 )
   // Switch between Arabic and English text on hover
@@ -603,7 +729,13 @@ $(document).ready(function () {
   $('button.submit-button').click(function () {
     // document.location = "https://sehasky.com/main/index.php"
     document.location = "https://sehasky.com/main/page/create-account"
-  })
+  });
+
+  // Jump to first Section on last arrow click
+  $(".arrow-up").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });
 
 
 
