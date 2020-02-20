@@ -14,13 +14,17 @@
     }
 
     .section-3 .services-cards {
-        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+                transform: scale(0.8);
         top: -90px;
     }
 
     .section-3 .arrow-down-section-3 {
         right: 47%;
-        transform: translate(0, -110px);
+        -webkit-transform: translate(0, -110px);
+            -ms-transform: translate(0, -110px);
+                transform: translate(0, -110px);
     }
 
     .section-4 .path-slider__current-item .item__circle p {
@@ -33,30 +37,40 @@
 
 @media only screen and (max-width: 1366px) {
     .section-3 .services-cards {
-        transform: scale(0.75);
+        -webkit-transform: scale(0.75);
+            -ms-transform: scale(0.75);
+                transform: scale(0.75);
         top: -100px;
     }
 
     .section-3 .arrow-down-section-3 {
-        transform: translate(0, -120px);
+        -webkit-transform: translate(0, -120px);
+            -ms-transform: translate(0, -120px);
+                transform: translate(0, -120px);
     }
 
 }
 
 @media only screen and (max-width: 1280px) {
     .section-1 .tree {
-        transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+            -ms-transform: scale(0.6);
+                transform: scale(0.6);
         top: -15vh;
         left: -5vw;
     }
 
     .section-3 .services-cards {
-        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+                transform: scale(0.7);
         top: -130px;
     }
 
     .section-3 .arrow-down-section-3 {
-        transform: translate(0, -170px);
+        -webkit-transform: translate(0, -170px);
+            -ms-transform: translate(0, -170px);
+                transform: translate(0, -170px);
     }
 
 }

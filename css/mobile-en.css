@@ -18,8 +18,12 @@ html, body {
   
 @media screen and (max-width: 480px) {
     .section-3 .services-card {
-        transform: scale(0.75);
-        transform-origin: top;
+        -webkit-transform: scale(0.75);
+            -ms-transform: scale(0.75);
+                transform: scale(0.75);
+        -webkit-transform-origin: top;
+            -ms-transform-origin: top;
+                transform-origin: top;
     }
 }
 
@@ -31,7 +35,9 @@ html, body {
 
 @media screen and (max-width: 410px) {
     .section-3 .services-card {
-        transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+            -ms-transform: scale(0.6);
+                transform: scale(0.6);
         right: 8px;
     }
 }

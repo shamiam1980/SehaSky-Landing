@@ -26,9 +26,9 @@
 // CUSTOM
 
 // Preloader
-$('.section').css('visibility', 'hidden');
+$('#no-pagepiling').css('visibility', 'hidden');
 setTimeout(function () {
-  $('.section').css('visibility', 'visible');
+  $('#no-pagepiling').css('visibility', 'visible');
   $('.preloader').hide();
 }, 2000);
 
@@ -74,6 +74,8 @@ $(document).ready(function () {
   //   easing: 'easeInOutSine',
   //   direction: 'alternate'
   // });
+
+  // SECTION ( 1 )
 
   // Tree Animation [ Section-1 Moving clouds behind tree ]
 
@@ -407,7 +409,7 @@ $(document).ready(function () {
       //Generic swipe handler for all directions
       swipeLeft: function (event, direction, distance, duration, fingerCount, fingerData) {
         console.log('Swiped left!');
-        slider.selectPrevItem();
+        slider.selectNextItem();
       }
     });
 
@@ -415,7 +417,7 @@ $(document).ready(function () {
       //Generic swipe handler for all directions
       swipeRight: function (event, direction, distance, duration, fingerCount, fingerData) {
         console.log('Swiped right!');
-        slider.selectNextItem();
+        slider.selectPrevItem();
       }
     });
 

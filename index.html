@@ -28,18 +28,18 @@
    <meta name="msapplication-TileImage" content="/img/favicon//favicon-144.png">
    <meta name="msapplication-config" content="/img/favicon//browserconfig.xml">
    <!-- Boilerplate CSS -->
-   <link rel="stylesheet" href="css/normalize.css" />
-   <link rel="stylesheet" href="css/main.css" />
+   <link rel="stylesheet" href="css/vendor/normalize.css" />
+   <link rel="stylesheet" href="css/vendor/main.css" />
    <!-- Import Bulma CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
    <!-- Import FontAwesome -->
    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
    <!-- Horizontal Scroll CSS -->
-   <link rel="stylesheet" href="css/horizontal-scroll.css" />
+   <link rel="stylesheet" href="css/vendor/horizontal-scroll.css" />
    <!-- FullPage -->
-   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+   <link rel="stylesheet" type="text/css" href="css/vendor/fullpage.css" />
    <!-- PagePiling -->
-   <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
+   <link rel="stylesheet" type="text/css" href="css/vendor/jquery.pagepiling.css" />
    <!-- Material Design Icons Font -->
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <!-- Import Google fonts -->
@@ -67,7 +67,7 @@
    </div>
 
    <!-- FullPage.js Plugin Markup -->
-   <div id="pagepiling">
+   <div id="pagepiling" style="display: none;">
       <section class="section section-1">
          <svg preserveAspectRatio="none" width="1096px" height="622px" viewBox="0 0 1096 622" class="wave-1">
             <defs>
@@ -408,6 +408,8 @@
 
          if (isMobile) {
             document.location = "mobile.html";
+         } else {
+            $('#pagepiling').show();
          }
       });
    </script>
