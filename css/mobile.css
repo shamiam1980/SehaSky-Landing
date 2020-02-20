@@ -567,6 +567,10 @@ div {
 
 /* SECTION ( 4 ) */
 
+.path-slider__current-item .item__circle {
+  border: 15px solid rgba(228, 222, 40, 0.9);
+}
+
 @media screen and (max-width: 768px) {
   .section-4 .path-slider__current-item .item__circle p {
     font-size: 1.7rem;
