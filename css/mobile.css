@@ -568,8 +568,21 @@ div {
 /* SECTION ( 4 ) */
 
 .path-slider__current-item .item__circle {
-  border: 15px solid rgba(228, 222, 40, 0.9);
+  border: 10px solid rgba(255, 252, 141, 0.9);
+  /* -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate; */
 }
+
+@-webkit-keyframes neon2 {
+  from {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFDD1B, 0 0 10px #FFDD1B, 0 0 20px #FFDD1B, 0 0 30px #FFDD1B, 0 0 50px #FFDD1B;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .section-4 .path-slider__current-item .item__circle p {
@@ -602,6 +615,12 @@ div {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .section-4 .path-slider__current-item .item__circle p.path-slider-text {
+    right: -200px;
+  }
+}
+
 @media screen and (max-width: 426px) {
   .section-4 h2.main-title {
     font-size: 2.75rem;
@@ -613,18 +632,18 @@ div {
   }
 
   .item__circle {
-    -webkit-transform: scale(0.4);
-        -ms-transform: scale(0.4);
-            transform: scale(0.4);
+    -webkit-transform: scale(0.35);
+        -ms-transform: scale(0.35);
+            transform: scale(0.35);
     -webkit-transform-origin: center;
         -ms-transform-origin: center;
             transform-origin: center;
   }
 
   .path-slider__current-item .item__circle {
-    -webkit-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-            transform: scale(0.75);
+    -webkit-transform: scale(0.65);
+        -ms-transform: scale(0.65);
+            transform: scale(0.65);
     font-size: 1.7rem;
     right: -175px;
   }
