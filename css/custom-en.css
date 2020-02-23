@@ -85,6 +85,12 @@ button {
     font-size: 1.8rem;
 }
 
+/* FOOTER */
+
+footer {
+    font-size: 1em;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1600px) {
@@ -126,6 +132,8 @@ button {
 }
 
 @media only screen and (max-width: 1280px) {
-
+    footer {
+        font-size: 0.9em;
+    }
 
 }

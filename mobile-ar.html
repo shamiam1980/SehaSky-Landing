@@ -388,11 +388,22 @@
         </div>
 
       </div>
+      <footer>
+        <a href="https://sehasky.com/main/page/about">حَول</a>
+        <a href="https://sehasky.com/main/page/terms">الشروط</a>
+        <a href="https://sehasky.com/main/page/privacy">الخصوصية</a>
+        <a href="https://sehasky.com/main/page/contact">اتصل بنا</a>
+        <p>جميع الحقوق محفوظة&copy;<span id="year"></span> صحة سكاي</p>
+      </footer>
       <img class="arrow-up" src="/img/arrow-down.svg" alt="arrow-up">
     </section>
 
   </div>
 
+
+
+
+  <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 
 
 
@@ -409,7 +420,22 @@
         '<script src="js/vendor/jquery-3.4.1.min.js"><\/script>'
       );
   </script>
+
+  <!-- Replace footer English digits with Arabic/Hindi digits -->
+  <script type="text/javascript">
+    // Delay because year is dynamically generated from JS plugins file
+    setTimeout(function () {
+      var map = ["&\#1632;", "&\#1633;", "&\#1634;", "&\#1635;", "&\#1636;", "&\#1637;", "&\#1638;", "&\#1639;", "&\#1640;", "&\#1641;"]
+
+      document.querySelector('footer').innerHTML = document.querySelector('footer').innerHTML.replace(
+        /\d(?=[^<>]*(<|$))/g,
+        function ($0) { return map[$0] }
+      );
+    }, 500);
+  </script>
+
   <!-- Vendors -->
+
   <!-- FullPage | Scrolling Technique | Not used -->
   <!-- <script type="text/javascript" src="js/vendor/fullpage.js"></script> -->
   <!-- PagePiling | Scrolling Technique -->

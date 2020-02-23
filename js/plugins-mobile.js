@@ -184,6 +184,8 @@ $(document).ready(function () {
     .fromTo(shadows, .3, { autoAlpha: 0 }, { autoAlpha: 1 }, 'label1+=1')
     .staggerFromTo(text, 1, textStaggerFrom, textStaggerTo, .2, 'label1+=2');
 
+  /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+
   // SECTION ( 3 )
 
   // Touch Swipe Plugin Injection to slider [ width < 520px ]
@@ -296,11 +298,12 @@ $(document).ready(function () {
         mySwiper.slideNext();
         setTimeout(function () {
           mySwiper.slidePrev();
-        }, 1200);
+        }, 1000);
       }
     });
   }
 
+  /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
   // SECTION ( 4 ) -- Path Slider Plugin
   // Function to get a path (string) similar to sin function. Can accept following options that you can use for customization:
@@ -443,6 +446,8 @@ $(document).ready(function () {
     });
 
   })();
+
+  /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
   // SECTION ( 5 ) -- Contact Form
 
@@ -675,7 +680,7 @@ $(document).ready(function () {
 
   // $('.select-field').fancySelect();
 
-  /* __________________________________________________________________________________________________________ */
+  /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
   // MY CUSTOM
 
@@ -705,6 +710,7 @@ $(document).ready(function () {
   // });
 
   // SECTION ( 3 ) 
+
   // Neumorphic click effect on click ( Not used now as you must remove hover effect in CSS + Clicks lead to nothing )
   $('.services-card__wrapper').click(function () {
     $(this).addClass('services-card__wrapper-clicked');
@@ -729,6 +735,7 @@ $(document).ready(function () {
 
 
   // SECTION ( 4 )
+
   // Switch between Arabic and English text on hover
   // $('.path-slider__ara-text').mouseenter(function () {
   //   $(this).hide();
@@ -758,6 +765,12 @@ $(document).ready(function () {
   $(".arrow-up").click(function () {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
+  });
+
+  // Footer > Insert dynamic year
+  $(function () { // Alternative to old 'window.onload' which caused conflict with cart page 'window.onload'
+    var date = new Date().getFullYear();
+    $("#year").html(date);
   });
 
 
