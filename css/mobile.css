@@ -183,6 +183,10 @@ div {
   width: auto;
 }
 
+.section-5 .column.is-one-fifth svg.section-5-svg-bg-small {
+  display: none;
+}
+
 /* MEDIA QUERIES */
 
 /* GENERAL */
@@ -723,6 +727,7 @@ div {
   }
 
   .section-5 .column.is-one-fifth svg.section-5-svg-bg-small {
+    display: block;
     position: absolute;
     left: 0;
     bottom: -5px;
