@@ -286,17 +286,20 @@ $(document).ready(function () {
 
   var mySwiper = initSwiperJS();
 
-  $(window).scroll(function () {
-    var scrollTop = $(window).scrollTop();
-    var section3Top = $('.section-3').offset().top;
-    if (scrollTop >= section3Top - 400) {
-      $(window).off("scroll");
-      mySwiper.slideNext();
-      setTimeout(function () {
-        mySwiper.slidePrev();
-      }, 1200);
-    }
-  });
+  if (window.matchMedia("(max-width: 520px)").matches) {
+
+    $(window).scroll(function () {
+      var scrollTop = $(window).scrollTop();
+      var section3Top = $('.section-3').offset().top;
+      if (scrollTop >= section3Top - 400) {
+        $(window).off("scroll");
+        mySwiper.slideNext();
+        setTimeout(function () {
+          mySwiper.slidePrev();
+        }, 1200);
+      }
+    });
+  }
 
 
   // SECTION ( 4 ) -- Path Slider Plugin
