@@ -589,6 +589,17 @@ div {
   animation: neon2 1.5s ease-in-out infinite alternate; */
 }
 
+@keyframes neon2 {
+  from {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffdd1b,
+      0 0 10px #ffdd1b, 0 0 20px #ffdd1b, 0 0 30px #ffdd1b, 0 0 50px #ffdd1b;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
+      0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+  }
+}
+
 @-webkit-keyframes neon2 {
   from {
     box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffdd1b,
