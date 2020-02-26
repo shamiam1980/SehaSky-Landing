@@ -216,9 +216,9 @@ div {
 
 /* SECTION ( 1 ) */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .section-1 .right {
-    padding-top: 28vh;
+    padding-top: 30vh;
   }
 }
 
