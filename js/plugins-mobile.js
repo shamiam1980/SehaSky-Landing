@@ -714,6 +714,14 @@ $(document).ready(function () {
   //   $.fn.pagepiling.moveSectionDown();
   // });
 
+  // SECTION ( 2 ) 
+
+  // Refresh doctor image in Arabic/English pages to fix bug of not showing in Arabic page
+  $('.section-2 .content img').hide();
+  setTimeout(function () {
+    $('.section-2 .content img').show();
+  }, 2200);
+
   // SECTION ( 3 ) 
 
   // Neumorphic click effect on click ( Not used now as you must remove hover effect in CSS + Clicks lead to nothing )
