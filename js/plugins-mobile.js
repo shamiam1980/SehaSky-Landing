@@ -696,6 +696,11 @@ $(document).ready(function () {
   //   $.fn.pagepiling.moveTo(1);
   // });
 
+  // Force re-render when orientation suddenly changes to Landscape mode
+  window.onorientationchange = function () {
+    window.location.reload();
+  }
+
   // SECTION ( 1 )
 
   // Simple SehaSky logo animation
@@ -721,7 +726,7 @@ $(document).ready(function () {
 
   // Set section-3 height to match cards height to compensate transform scale effect ( Vertical cards layout )
 
-  if (window.matchMedia("(max-width: 768px)").matches) {
+  if (window.matchMedia("(max-width: 800px)").matches) {
     $('.section-3').height($('.services-cards').outerHeight() * 0.8 + $('.services-title').outerHeight() + 40);
   }
 

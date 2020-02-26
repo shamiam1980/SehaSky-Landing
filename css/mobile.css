@@ -2,7 +2,7 @@
 
 html {
   -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 /* body {
@@ -67,12 +67,17 @@ div {
   left: 10px;
   top: 35%;
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .section-1 .right {
   padding-top: 20%;
+  top: auto;
+}
+
+.section-1 .right .logo {
+  width: 30%;
 }
 
 .section-1 .right h2.main-title {
@@ -81,8 +86,8 @@ div {
 
 .section-1 .arrow-down {
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 
 /* SECTION ( 2 ) */
@@ -95,8 +100,8 @@ div {
 .section-2 .content {
   -webkit-box-align: unset;
   -webkit-align-items: unset;
-      -ms-flex-align: unset;
-          align-items: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
   direction: ltr;
 }
 
@@ -108,12 +113,12 @@ div {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 2rem;
   position: static;
 }
@@ -152,14 +157,14 @@ div {
 .section-3 .services-card__wrapper:hover {
   -webkit-box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 0.8),
     12px 12px 12px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 0.8),
+  box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 0.8),
     12px 12px 12px 0 rgba(0, 0, 0, 0.4);
 }
 
 .section-3 .services-card__wrapper-clicked {
   -webkit-box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 0.2),
     1px 1px 1px 0 rgba(0, 0, 0, 0.4) !important;
-          box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 0.2),
+  box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 0.2),
     1px 1px 1px 0 rgba(0, 0, 0, 0.4) !important;
 }
 
@@ -211,6 +216,12 @@ div {
 
 /* SECTION ( 1 ) */
 
+@media screen and (max-width: 800px) {
+  .section-1 .right {
+    padding-top: 28vh;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .section-1 .wave-1,
   .section-1 .wave-2 {
@@ -220,8 +231,8 @@ div {
 
   .section-1 path {
     -webkit-transform: rotate(0);
-        -ms-transform: rotate(0);
-            transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
   }
 
   .section-1 .content {
@@ -232,8 +243,8 @@ div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .section-1 .tree {
@@ -242,11 +253,11 @@ div {
     left: -15vh;
     transform: scale(0.4); */
     -webkit-transform: scale(0.4);
-        -ms-transform: scale(0.4);
-            transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    transform: scale(0.4);
     -webkit-transform-origin: top left;
-        -ms-transform-origin: top left;
-            transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
     top: 5px;
     left: -20px;
   }
@@ -272,11 +283,11 @@ div {
   .section-1 .right .logo {
     mix-blend-mode: multiply;
     -webkit-transform: scale(0.6);
-        -ms-transform: scale(0.6);
-            transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
     -webkit-transform-origin: bottom;
-        -ms-transform-origin: bottom;
-            transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    transform-origin: bottom;
   }
 
   .section-1 .right h1 {
@@ -289,7 +300,7 @@ div {
     font-size: 1.3rem;
     padding-top: 17px;
     -webkit-border-radius: 1.75rem;
-            border-radius: 1.75rem;
+    border-radius: 1.75rem;
     width: 10rem;
     height: 4rem;
   }
@@ -303,15 +314,15 @@ div {
   .section-1 .wave-1,
   .section-1 .wave-2 {
     -webkit-transform: scaleX(2);
-        -ms-transform: scaleX(2);
-            transform: scaleX(2);
+    -ms-transform: scaleX(2);
+    transform: scaleX(2);
     top: -46%;
   }
 
   .section-1 .right .logo {
     -webkit-transform-origin: center;
-        -ms-transform-origin: center;
-            transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
   }
 
   .section-1 .right h1 {
@@ -327,8 +338,8 @@ div {
   .section-1 .wave-1,
   .section-1 .wave-2 {
     -webkit-transform: scaleX(1.5);
-        -ms-transform: scaleX(1.5);
-            transform: scaleX(1.5);
+    -ms-transform: scaleX(1.5);
+    transform: scaleX(1.5);
     top: -45%;
   }
 
@@ -342,8 +353,8 @@ div {
 
   .section-1 .right .logo {
     -webkit-transform-origin: center;
-        -ms-transform-origin: center;
-            transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
   }
 
   .section-1 .right h1 {
@@ -362,8 +373,8 @@ div {
     left: -150px;
     transform: scale(0.4); */
     -webkit-transform: scale(0.3);
-        -ms-transform: scale(0.3);
-            transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3);
   }
 
   .section-1 .right {
@@ -397,8 +408,8 @@ div {
 
   .section-1 a.know-more_link {
     -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-            transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
   }
 }
 
@@ -456,11 +467,11 @@ div {
 
   .section-3 .services-cards {
     -webkit-transform: scale(0.6);
-        -ms-transform: scale(0.6);
-            transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
     -webkit-transform-origin: top;
-        -ms-transform-origin: top;
-            transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
     top: 50px;
   }
 }
@@ -473,12 +484,12 @@ div {
 
   .section-3 .services-cards {
     -webkit-transform: scale(0.5);
-        -ms-transform: scale(0.5);
-            transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .section-3 {
     height: auto;
   }
@@ -491,13 +502,13 @@ div {
 
   .section-3 .services-cards {
     -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-            transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     top: 0;
     padding-bottom: 3rem;
   }
@@ -513,14 +524,14 @@ div {
 
   .section-3 .services-cards {
     -webkit-transform: scale(0.6);
-        -ms-transform: scale(0.6);
-            transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
     top: 20px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row; /* -- Should be changed to column in case of normal cards -- */
+    -ms-flex-direction: row;
+    flex-direction: row; /* -- Should be changed to column in case of normal cards -- */
   }
   /* NOTE Section height must be adjusted using jQuery according to transform scale value to get rid off bottom whitespace */
 
@@ -534,11 +545,11 @@ div {
 @media screen and (max-width: 480px) {
   .section-3 .services-card {
     -webkit-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-            transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    transform: scale(0.75);
     -webkit-transform-origin: top;
-        -ms-transform-origin: top;
-            transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
   }
 }
 
@@ -551,8 +562,8 @@ div {
 @media screen and (max-width: 410px) {
   .section-3 .services-card {
     -webkit-transform: scale(0.6);
-        -ms-transform: scale(0.6);
-            transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
     right: 8px;
   }
 }
@@ -580,13 +591,14 @@ div {
 
 @-webkit-keyframes neon2 {
   from {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFDD1B, 0 0 10px #FFDD1B, 0 0 20px #FFDD1B, 0 0 30px #FFDD1B, 0 0 50px #FFDD1B;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffdd1b,
+      0 0 10px #ffdd1b, 0 0 20px #ffdd1b, 0 0 30px #ffdd1b, 0 0 50px #ffdd1b;
   }
   to {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
+      0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .section-4 .path-slider__current-item .item__circle p {
@@ -614,8 +626,8 @@ div {
 
   .path-slider__current-item .item__circle {
     -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-            transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
   }
 }
 
@@ -637,17 +649,17 @@ div {
 
   .item__circle {
     -webkit-transform: scale(0.35);
-        -ms-transform: scale(0.35);
-            transform: scale(0.35);
+    -ms-transform: scale(0.35);
+    transform: scale(0.35);
     -webkit-transform-origin: center;
-        -ms-transform-origin: center;
-            transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
   }
 
   .path-slider__current-item .item__circle {
     -webkit-transform: scale(0.65);
-        -ms-transform: scale(0.65);
-            transform: scale(0.65);
+    -ms-transform: scale(0.65);
+    transform: scale(0.65);
     font-size: 1.7rem;
     right: -175px;
   }
@@ -656,14 +668,14 @@ div {
 @media screen and (max-width: 320px) {
   .path-slider__current-item .item__circle {
     -webkit-transform: scale(0.6);
-        -ms-transform: scale(0.6);
-            transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
   }
 
   .item__circle {
     -webkit-transform: scale(0.3);
-        -ms-transform: scale(0.3);
-            transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3);
   }
 
   .section-4 .path-slider__current-item .item__circle p {
@@ -762,7 +774,6 @@ div {
     padding-left: 25px;
     font-size: 0.85em;
   }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -770,8 +781,8 @@ div {
     width: 100%;
     -webkit-box-pack: space-evenly;
     -webkit-justify-content: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
   }
 
   footer a {
@@ -786,7 +797,6 @@ div {
   .arrow-up {
     bottom: 25px;
   }
-
 }
 
 @media screen and (max-width: 406px) {
@@ -837,16 +847,79 @@ div {
   }
 }
 
-
 /* HEIGHT-BASED MEDIA QUERIES */
-
 
 @media screen and (max-height: 480px) {
   .section-5 .columns {
     height: 40vh;
-  }  
+  }
   .section-5 .column.is-one-third.section-5-left {
     position: relative;
     top: -60px;
+  }
+}
+
+/* ORIENTATION-BASED MEDIA QUERIES */
+@media screen and (min-width: 1000px) and (max-width: 1400px) and (orientation: landscape) {
+  .section-1 .right {
+    padding-top: 15%;
+  }
+
+  .section-3 .services-cards {
+    -webkit-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    transform: scale(0.75);
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) and (orientation: landscape) {
+  .section-1 .right {
+    padding-top: 30px;
+  }
+
+  .section-1 .tree {
+    -webkit-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+
+  .section-1 .left img.header_image {
+    top: 100px;
+  }
+
+  .section-2 h2.main-title {
+    padding: 0;
+  }
+
+  .section-2 .container p {
+    font-size: 1.5rem;
+  }
+
+  .section-3 h2.main-title {
+    top: 0;
+    margin-top: 1rem !important;
+    padding-top: 0;
+  }
+
+  .section-3 .services-cards {
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    top: 0;
+  }
+
+  .section-5 h2.main-title.section-5-title {
+    margin-bottom: 1rem;
+  }
+
+  h1.section-5-subtitle {
+    margin-bottom: 0;
   }
 }

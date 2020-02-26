@@ -29,6 +29,7 @@
 $('.section').css('visibility', 'hidden');
 setTimeout(function () {
   $('.section').css('visibility', 'visible');
+  $('#pagepiling').show();
   $('.preloader').hide();
 }, 2000);
 

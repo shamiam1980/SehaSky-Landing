@@ -1,139 +1,180 @@
 body {
-    font-family: 'Sniglet', 'McLaren', 'Quicksand', 'Comfortaa', sans-serif;
+  font-family: "Sniglet", "McLaren", "Quicksand", "Comfortaa", sans-serif;
 }
 
 h2.main-title {
-    font-size: 3.2rem;
-    padding-top: 0.75rem;
+  font-size: 3.2rem;
+  padding-top: 0.75rem;
 }
 
 /* SECTION ( 1 ) */
 
 .section-1 a {
-    font-size: 1.5rem;
-    padding-top: 17px;
+  font-size: 1.5rem;
+  padding-top: 17px;
 }
 
 .section-1 a.english-page {
-    font-family: 'FF Hekaya', sans-serif;
-    padding-top: 2px;
-    font-weight: normal;
+  font-family: "FF Hekaya", sans-serif;
+  padding-top: 2px;
+  font-weight: normal;
 }
 
 /* SECTION ( 2 ) */
 
 .section-2 {
-    direction: ltr;
-    background-image: url('/img/section2_bg_en.svg');
-    background-position: -3px;
+  direction: ltr;
+  background-image: url("/img/section2_bg_en.svg");
+  background-position: -3px;
 }
 
 .section-2 .container,
 .section-2 .container p {
-    padding-right: 0;
-    padding-left: 2rem;
+  padding-right: 0;
+  padding-left: 2rem;
 }
 
 /* SECTION ( 3 ) */
 
 .section-3 {
-    direction: ltr;
-  }
+  direction: ltr;
+}
 
 .section-3 .services-cards h1 {
-    font-size: 2.2rem;
-    line-height: 1;
-    padding-top: 0.5rem;
-    padding-bottom: 5rem;
+  font-size: 2.2rem;
+  line-height: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 5rem;
 }
 
 .section-3 .services-cards p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .section-3 .services-card h1.online-booking {
-    position: relative;
-    top: 20px;
+  position: relative;
+  top: 20px;
 }
 
 /* SECTION ( 4 ) */
 .section-4 .path-slider p {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
-
 .section-4 .path-slider__current-item .item__circle p {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .path-slider__ara-text {
-    display: none;
+  display: none;
 }
 
 .path-slider__eng-text {
-    display: block;
+  display: block;
 }
 
 /* SECTION ( 5 ) */
 
 .section-5 h1 {
-   direction: ltr;
+  direction: ltr;
 }
 
 button {
-    font-family: 'Sniglet', sans-serif;
-    font-size: 1.8rem;
+  font-family: "Sniglet", sans-serif;
+  font-size: 1.8rem;
 }
 
 /* FOOTER */
 
 footer {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1600px) {
-    .section-4 .path-slider__current-item .item__circle p {
-        font-size: 2rem;
-        top: -5rem;
-        right: -22rem;
-    }
-
+  .section-4 .path-slider__current-item .item__circle p {
+    font-size: 2rem;
+    top: -5rem;
+    right: -22rem;
+  }
 }
 
 @media only screen and (max-width: 1366px) {
-    .section-1 .right h2.main-title {
-        font-size: 3rem;
-    }
-    
-    .section-2 .container p {
-        font-size: 2.2rem;
-    }
-    
-    .section-4 .path-slider p {
-        font-size: 1.6rem;
-    }
-    
-    .section-4 .path-slider__current-item .item__circle p {
-        font-size: 1.8rem;
-        top: -5rem;
-        right: -20rem;
-    }
+  .section-1 .right h2.main-title {
+    font-size: 2.5rem;
+  }
 
-    .section-4 .path-slider__item.path-slider__item--5.path-slider__current-item p.path-slider__eng-text {
-        right: -23rem;
-    }
+  .section-2 .container p {
+    font-size: 2.2rem;
+  }
 
-    .section-5 button.submit-button {
-        font-size: 1.6rem;
-    }
+  .section-4 .path-slider p {
+    font-size: 1.6rem;
+  }
 
+  .section-4 .path-slider__current-item .item__circle p {
+    font-size: 1.25rem;
+    top: -4.75rem;
+    right: -20rem;
+    text-align: left;
+  }
+
+  .section-4
+    .path-slider__item.path-slider__item--5.path-slider__current-item
+    p.path-slider__eng-text {
+    right: -23rem;
+  }
+
+  .section-5 button.submit-button {
+    font-size: 1.6rem;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
-    footer {
-        font-size: 0.9em;
-    }
+  .section-1 .right h2.main-title {
+    font-size: 2.3rem;
+  }
 
+  .section-2 .container p {
+    font-size: 1.8rem;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (width: 1600px) and (max-height: 900px) {
+  .section-2 .container p {
+    font-size: 2rem;
+  }
+
+  .section-3 .arrow-down-section-3 {
+    right: 47%;
+    -webkit-transform: translate(0, -110px);
+    -ms-transform: translate(0, -110px);
+    transform: translate(0, -110px);
+  }
+}
+
+@media only screen and (width: 1440px) and (max-height: 900px) {
+  .section-3 h2.main-title {
+    margin-top: 0px !important;
+  }
+
+  .section-1 .right h2.main-title {
+    font-size: 2.5rem;
+  }
+
+  .section-3 .services-cards {
+    top: -90px;
+  }
+
+  .section-3 .arrow-down-section-3 {
+    right: 47%;
+    -webkit-transform: translate(0, -110px);
+    -ms-transform: translate(0, -110px);
+    transform: translate(0, -110px);
+  }
 }
