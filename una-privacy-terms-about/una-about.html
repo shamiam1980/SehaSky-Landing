@@ -551,6 +551,12 @@
    .bx-cover-wrapper {
       display: none;
    }
+
+   /* FIX UNDERLINING FONT AWESOME ICONS WITH ANCHOR */
+   i[class^="icon-"]:before {
+      display: inline-block;
+      text-decoration: none;
+   }
 </style>
 
 <body>
@@ -625,6 +631,7 @@
    <!-- SCRIPTS -->
 
 
+   <!-- LOAD JQUERY -->
    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 
    <script>
