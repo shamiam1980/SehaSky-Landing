@@ -1,0 +1,731 @@
+<!DOCTYPE HTML>
+
+<!-- UNA TERMS PAGE POLYGLOT KEY TO PASTE HTML : _sys_page_lang_block_about -->
+<!-- NOTE: SEARCH FOR TITLE BLOCK : _sys_page_block_title_about , AND CHANGE TEXT FROM 'About' to 'About Us' -->
+<!-- NOTE: SEARCH FOR TITLE BLOCK : _sys_page_title_about , AND CHANGE TEXT FROM 'About' to 'SehaSky :: About Us' -->
+
+<html dir="rtl" lang="ar">
+
+<head>
+   <meta charset="utf-8" />
+   <title>صحة سكاي :: من نحن</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- Font Awesome -->
+   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+   <!-- Quicksand Google font -->
+   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+   <!-- Nunito Google font -->
+   <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet"> -->
+   <!-- Handlee Google font -- SLOGAN FONT -->
+   <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+   <!-- Tajawal Google font -- ARABIC TEXT FONT -->
+   <link href="https://fonts.googleapis.com/css?family=Tajawal:400,700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Changa:300,400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+   /****************************
+   **  Style for all devices  **
+   ****************************/
+
+   /* General */
+
+   body,
+   header,
+   nav,
+   article,
+   section,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   h7,
+   p {
+      font-family: 'Tajawal', 'Nunito', 'Quicksand', 'Lato', Arial, sans-serif;
+      color: #202020;
+      overflow-x: hidden;
+      font-size: 1.1rem;
+   }
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   h7 {
+      font-family: 'Changa', 'Nunito', 'Quicksand', 'Lato', Arial, sans-serif;
+      color: #202020;
+      overflow-x: hidden;
+      font-size: 1.1rem;
+   }
+
+   section {
+      border-bottom: solid thin rgb(220, 220, 220);
+   }
+
+   /* Page header */
+
+   header {
+      margin: -0.5 -0.5em 0 -0.5em;
+      text-align: center;
+   }
+
+   header h1 {
+      font-size: 3em;
+      color: #fc3735;
+      background: -webkit-linear-gradient(left, #ff8fb2, #a797ff, #00e5ff, #ff8fb2);
+      /* background: -webkit-linear-gradient(left, #F57170, #10DDC2, #F57170); */
+      background-size: 1600px 200px;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation-duration: 5s;
+      animation-name: animationgradienttitle;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;
+   }
+
+   @keyframes animationgradienttitle {
+      0% {
+         background-position: 0 1600px;
+      }
+
+      100% {
+         background-position: 1600px 0;
+      }
+   }
+
+   /* Section headings */
+
+   h1 {
+      text-align: center;
+   }
+
+   /* Navigation */
+
+   nav a {
+      text-decoration: none;
+      color: #202020;
+   }
+
+   nav a:hover {
+      color: #07BEB8;
+   }
+
+   nav h1 {
+      margin: 0 0 0.5em 0;
+   }
+
+   /* General content elements and styles */
+
+   nav ul,
+   nav ol {
+      color: #FD6967;
+      font-weight: bold;
+      font-size: 1.2em;
+      display: flex;
+      justify-content: center;
+      background-color: #fbfbfb;
+   }
+
+   ul {
+      list-style: square outside;
+   }
+
+   /* ol span {
+      color: #202020;
+      font-weight: normal;
+      font-size: 0.84em;
+   }
+
+   ul span {
+      color: #202020;
+      font-weight: normal;
+      font-size: 0.84em;
+   } */
+
+   blockquote {
+      border-left: solid thick #b91e27;
+   }
+
+   em {
+      font-style: italic;
+   }
+
+   strong {
+      font-weight: bold;
+      color: #b91e27;
+   }
+
+   p.paragraph-after-list {
+      padding-left: 0;
+      margin-left: 0;
+   }
+
+   h1.main-heading {
+      color: #07BEB8;
+   }
+
+   p.last-paragraph {
+      margin-bottom: 15px;
+   }
+
+   /* Nav to-top elements */
+
+   nav.to-top {
+      display: block;
+      padding: 2.5em 0.5em 0.5em 2.5em;
+      margin: 0;
+      width: auto;
+      position: absolute;
+      right: 2em;
+      left: auto;
+      border-style: none;
+      background-color: transparent;
+   }
+
+   nav.to-top a {
+      margin: 0;
+      border: 0;
+      text-decoration: none;
+      color: #07BEB8;
+      font-size: 0.8em;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+   }
+
+   nav.to-top a:hover {
+      text-decoration: underline;
+   }
+
+   nav.to-top a .fa-arrow-circle-up {
+      color: #07BEB8;
+      font-size: 2em;
+      padding-right: 5px;
+   }
+
+   nav.to-top a .fa-arrow-circle-up:hover {
+      color: rgb(17, 170, 200);
+      transform: translateY(-2px);
+      transition: all 0.2s ease-in-out;
+   }
+
+   nav.to-top.to-top-bottom {
+      padding: 0;
+   }
+
+   .content-list li {
+      margin-bottom: 0.5em;
+   }
+
+   .fa-user-md,
+   .fa-user-tie {
+      font-size: 3rem;
+      padding-right: 1rem;
+      color: #395A90;
+   }
+
+   .slogan {
+      font-size: 1.5em;
+      font-family: 'Changa';
+      color: #333;
+   }
+
+   .slogan span {
+      font-family: 'Handlee';
+   }
+
+   /* MEDIA QUERIES */
+
+   /********************************************
+   **  Style for devices with small displays  **
+   ********************************************/
+   @media (max-width: 46.9em) {
+      /* General */
+
+      article {
+         padding: 20px;
+         margin-top: 0;
+      }
+
+      section {
+         margin: 0 -0.5em 1em -0.5em;
+         padding: 0 0.5em 1em 0.5em;
+      }
+
+      /* Page header */
+
+      header h1 {
+         padding: 0.5em 0 0.5em 0;
+         font-size: 2.5em;
+      }
+
+      /* Section headings */
+
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      h7,
+      p,
+      .content-list {
+         margin: 0.2em 0 0 1em;
+         padding: 0.1em;
+      }
+
+      .content-list {
+         margin-left: 10%;
+      }
+
+      p {
+         padding: 1em 0.1em;
+      }
+
+      h1 {
+         font-size: 1.5em;
+         /*  margin: 0 0 1em 0;*/
+      }
+
+      h2 {
+         font-size: 1.2em;
+      }
+
+      h3 {
+         font-size: 1.13em;
+      }
+
+      h4 {
+         font-size: 1.07em;
+      }
+
+      /* Navigation */
+
+      /* Nav bar */
+
+      nav {
+         margin: 1em auto;
+         padding: 1em;
+         width: 80%;
+         border: solid thin rgb(240, 240, 240);
+         background-color: #FFF;
+      }
+
+      nav ul {
+         margin: 0;
+         list-style: square outside;
+         display: block;
+         background-color: unset;
+      }
+
+      nav a:hover {
+         font-weight: bold;
+      }
+
+      nav .child-menu-list {
+         font-size: 1rem;
+         color: #92ECC5;
+      }
+
+      nav.to-top {
+         padding: 1.75em 0.5em 0.5em 2.5em;
+         right: 0;
+      }
+
+      nav.to-top.to-top-bottom {
+         margin-top: -25px;
+         padding-top: 10px;
+         right: 10px;
+      }
+
+      .fa-user-md,
+      .fa-user-tie {
+         font-size: 2rem;
+         padding-right: 15px;
+      }
+
+      .slogan {
+         font-size: 1.2em;
+      }
+   }
+
+   /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+   /* SMALL DEVICES FINE-TUNING */
+   /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+
+
+   @media (max-width: 540px) {
+
+      p,
+      ul,
+      ol {
+         font-size: 0.9em;
+      }
+
+      nav ul {
+         font-size: 1.2em;
+      }
+
+      nav .child-menu-list {
+         font-size: 0.9rem;
+      }
+
+      nav.to-top {
+         padding-top: 2.25em;
+         right: -10px;
+         transform: scale(0.8);
+         transform-origin: top;
+      }
+   }
+
+   @media (max-width: 410px) {
+
+      article {
+         padding-top: 0;
+      }
+
+      p,
+      ul,
+      ol {
+         font-size: 12px;
+      }
+
+      header h1 {
+         font-size: 1.9em;
+      }
+
+      nav h1 {
+         font-size: 1.2em;
+      }
+
+      nav ul {
+         font-size: 1em;
+      }
+
+      nav .child-menu-list {
+         font-size: 0.75rem;
+      }
+
+      nav.to-top {
+         padding-top: 2.25em;
+         right: -10px;
+         transform: scale(0.8);
+         transform-origin: top;
+      }
+
+      .slogan {
+         font-size: 0.9em;
+      }
+   }
+
+   @media (max-width: 360px) {
+
+      h1.main-heading {
+         font-size: 1.1em;
+         margin-top: 0;
+      }
+
+      h2 {
+         font-size: 1em;
+      }
+
+      nav.to-top {
+         padding-top: 0;
+      }
+
+      .fa-user-md,
+      .fa-user-tie {
+         font-size: 1.75rem;
+         padding-right: 10px;
+      }
+
+      .slogan {
+         font-size: 1em;
+      }
+
+   }
+
+   /********************************************
+   **  Style for devices with large displays  **
+   ********************************************/
+   @media (min-width: 47em) {
+      /* General */
+
+      section {
+         margin: 0 -0.5em 1em -0.5em;
+         padding: 2em 8% 2em 8%;
+      }
+
+      /* Page header */
+
+      header {
+         margin: 0 -0.5em 0 -0.5em;
+      }
+
+      header h1 {
+         padding: 0.5em 0 0 0.5em;
+         font-size: 4em;
+      }
+
+      /* Section headings  */
+
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      h7,
+      p,
+      .content-list {
+         margin: 0.8em 0 0 7%;
+         padding: 0.2em;
+      }
+
+      .content-list {
+         margin-left: 10%;
+      }
+
+      h1 {
+         font-size: 2em;
+         text-align: center;
+         margin: 0 0 1em 0;
+      }
+
+      h2 {
+         font-size: 1.65em;
+      }
+
+      h3 {
+         font-size: 1.4em;
+      }
+
+      h4 {
+         font-size: 1.15em;
+      }
+
+      /* Other content elements */
+
+      blockquote {
+         padding: 0 0 0 1.2em;
+         margin: 0 6em 0 4em;
+      }
+
+      nav ul,
+      nav ol {
+         padding: 0 6em 0 6em;
+      }
+
+      /* Navigation */
+
+      /* Nav bar */
+
+      nav {
+         padding: 0 0 3.5em 0;
+         margin: 0 0 0 0;
+      }
+
+      nav h1 {
+         display: none;
+         /* (display off-page?) */
+      }
+
+      nav ul {
+         margin: 0 0 0 -22.5em;
+         padding: 0;
+         float: left;
+         position: absolute;
+         width: 45em;
+         left: 50%;
+         border: solid thin rgb(240, 240, 240);
+         list-style: none outside;
+      }
+
+      nav li {
+         float: left;
+         margin: 1em;
+      }
+
+      nav li ul {
+         display: none;
+      }
+
+      nav a {
+         font-size: 1.1em;
+         font-weight: bold;
+      }
+   }
+
+   /**************************
+   **  Style for printouts  **
+   **************************/
+   @media print {
+      nav.to-top {
+         display: none;
+      }
+   }
+
+   /* UNA STYLING TO HIDE COVER */
+   .bx-cover-wrapper {
+      display: none;
+   }
+
+   /* FIX UNDERLINING FONT AWESOME ICONS WITH ANCHOR */
+   i[class^="icon-"]:before {
+      display: inline-block;
+      text-decoration: none;
+   }
+
+
+   /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+
+   /* ARABIC PAGE STYLING */
+
+   span.sehasky-english {
+      font-family: 'Quicksand';
+   }
+
+   .fa-user-md,
+   .fa-user-tie {
+      padding-left: 1rem;
+      padding-right: 0;
+   }
+
+   nav.to-top {
+      left: 2em;
+      right: auto;
+   }
+
+   nav.to-top a .fa-arrow-circle-up {
+      padding-left: 5px;
+      padding-right: 0;
+   }
+
+   @media (max-width: 46.9em) {
+
+      .fa-user-md,
+      .fa-user-tie {
+         padding-left: 15px;
+         padding-right: 0;
+      }
+
+      nav.to-top.to-top-bottom {
+         left: 10px;
+         right: auto;
+      }
+   }
+
+   @media (max-width: 360px) {
+
+      .fa-user-md,
+      .fa-user-tie {
+         padding-left: 10px;
+         padding-right: 0;
+      }
+   }
+
+   /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+</style>
+
+<body>
+
+   <header>
+      <h1>من نحن</h1>
+   </header>
+
+   <article>
+
+      <section>
+
+         <h1 class="main-heading" id="personal-info">من نحن؟</h1>
+         <p>
+            <span class="sehasky-english">SehaSky</span> هي منصة طبية عبر الإنترنت حيث يمكن للمرضى التواصل مع الأطباء
+            بطريقة تعاونية سلسة. سيكون لكل مريض سجل
+            طبي يشمل جميع جوانب الحالة الصحية الحالية والسابقة. وسوف تكون هذه السجلات متاحة للأطباء للوصول إلى تشخيص
+            دقيق. مع هذه البيانات، يمكننا توجيه كل شخص إلى الطبيب المناسب وإنشاء خطة مخصصة لكل شخص نحو حياة صحية تماما.
+            يمكن لمستخدمينا أيضًا الحصول على محتوى إعلامي ينتجه الأطباء الذين يقدمون نصائح حول كيفية تجنب بعض المشكلات
+            الصحية ، أو تصحيح المفاهيم الخاطئة والخرافات الشائعة أو تثقيف الجمهور حول موضوع معين.
+         </p>
+         <p class="slogan">في <span>SehaSky</span> ، الأطباء والمرضى أقرب من أي وقتٍ مضى.
+         </p>
+
+      </section>
+
+      <section>
+
+         <h1 class="main-heading" id="collection">لماذا نحن؟</h1>
+         <h2><span><i class="fas fa-user-md"></i></span>أنت طبيب</h2>
+         <p>يمكنك تزويدنا بمعلومات عنك عن طريق إدخال معلومات على تطبيقنا أو موقعنا الإلكتروني، مما يسمح لنا بالوصول إلى
+            البيانات الخاصة بك التي تحتفظ بها أطراف ثالثة، أو ملء النماذج، أو عن طريق المقابلة معنا عبر الهاتف أو البريد
+            الإلكتروني أو غير ذلك. يمكنك أيضًا أن تقدم لنا معلومات، وقد نقوم بجمع ومعالجة المعلومات الخاصة بك الناتجة عن
+            أي تفاعلات تقوم بها أو خدمات تطلبها أو مصدرها منا.
+         </p>
+         <h2><span><i class="fas fa-user-tie"></i></span>أنت مريض</h2>
+         <p>
+            في <span class="sehasky-english">SehaSky</span> كل طبيب هو الطبيب الشخصي الخاص بك. كل طبيب هو أحد أفراد
+            الأسرة التي غالبا ً ما تطلب المساعدة
+            منها، وهو أحد أفراد العائلة الذي يعرفك جيدًا ويفهم احتياجاتك الفريدة. لكن هذا ليس كل شيء على ما يرام؟ مشكلة
+            شائعة أخرى هي الوصفات الطبية التي لا يمكن اتخاذها بالتوازي والتي يمكن أن تؤدي للأسف في بعض الأحيان إلى مشاكل
+            خطيرة ، وربما أكثر خطورة من السبب الذي ذهبت إلى الطبيب في المقام الأول.
+         </p>
+         <p>
+            ومع ذلك ، من خلال توحيد العديد من الأطباء من مختلف التخصصات تحت مظلة <span
+               class="sehasky-english">SehaSky</span> ، لن تتصادم الوصفات الطبية مرة
+            أخرى. يتم إنتاج وصفة طبية موحدة على أساس التاريخ الطبي والعلاج الحالي الذي يمكن الوصول إليها من قبل جميع
+            الأطباء داخل شبكتنا.
+         </p>
+         <p>
+            عند التسجيل معنا، يمكنك إنشاء سجل طبي يحتوي على معلوماتك الصحية الحالية والسابقة. من خلال القيام بذلك ، تصبح
+            قضيتك متماسكة قدر الإمكان لأي طبيب ، مما يقلل من فرص الأخطاء الطبية أو التشخيص غير الدقيق أو الآثار السلبية.
+         </p>
+         <p>
+            خدمة واحدة أخرى حاسمة نقدمها هي أن نوجهك إلى الطبيب المناسب من التخصص المناسب بناءً على احتياجاتك. كلما كنت
+            لا تشعر بصحة جيدة، كل ما عليك القيام به هو الاتصال بنا، واحد من أطبائنا العامين سوف يجيب وتوجيهك إلى الطبيب
+            المناسب للأعراض الخاصة بك.
+         </p>
+         <p>
+            بالإضافة إلى كل ذلك ، سيتمكن جميع الأعضاء المسجلين في شبكتنا من الوصول إلى العديد من المشاركات والمقالات
+            الحصرية التي كتبها لا شيء سوى أطبائك المفضلين على <span class="sehasky-english">SehaSky</span>.
+         </p>
+
+         <nav class="to-top to-top-bottom"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>العودة
+               إلى الأعلى</a></nav>
+
+      </section>
+
+
+   </article>
+
+
+
+
+   <!-- SCRIPTS -->
+
+
+   <!-- LOAD JQUERY -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+   <script>
+      // Jump to first Section on last arrow click
+      $(".back-to-top").click(function (e) {
+         e.preventDefault();
+         $("html, body").animate({ scrollTop: 0 }, 500);
+      });
+
+      // Generic scroll anchors
+      $(document).ready(function () {
+         $("a.menu-link").click(function (event) {
+            event.preventDefault();
+            $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+         });
+      });
+   </script>
+
+
+</body>
+
+</html>
