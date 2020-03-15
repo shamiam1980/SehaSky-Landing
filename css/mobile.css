@@ -90,6 +90,18 @@ div {
   transform: translateY(0);
 }
 
+div.login-box {
+  bottom: 4px;
+  left: 10px;
+  right: auto;
+}
+
+.section-1 div.login-box a.login_link {
+  width: 55px;
+  height: 27px;
+  margin-right: 7px;
+}
+
 /* SECTION ( 2 ) */
 
 .section-2 {
@@ -404,12 +416,28 @@ div {
 @media screen and (max-width: 366px) {
   .section-1 .right h2.main-title {
     font-size: 1.4rem;
+    padding-top: 1rem;
   }
 
   .section-1 a.know-more_link {
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8);
+  }
+
+  div.login-box {
+    bottom: 0;
+    height: 2rem;
+  }
+  
+  .section-1 div.login-box h4 {
+    font-size: 0.8rem;
+  }
+  
+  .section-1 div.login-box a.login_link {
+    font-size: 0.75rem;
+    width: 40px;
+    height: 20px;
   }
 }
 

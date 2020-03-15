@@ -14,10 +14,55 @@ h2.main-title {
   padding-top: 17px;
 }
 
-.section-1 a.english-page {
+.section-1 a.english_link {
   font-family: "FF Hekaya", sans-serif;
   padding-top: 2px;
   font-weight: normal;
+}
+
+div.login-box {
+  position: absolute;
+  bottom: 130px;
+  right: 20px;
+  margin: 0;
+  font-family: 'Quicksand';
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3rem;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+div.login-box h4 {
+  font-size: 0.75rem;
+}
+
+.section-1 div.login-box a.login_link {
+  font-size: 0.75rem;
+  font-weight: bold;
+  width: 80px;
+  height: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
 }
 
 /* SECTION ( 2 ) */
@@ -62,7 +107,7 @@ h2.main-title {
 }
 
 .section-4 .path-slider__current-item .item__circle p {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .path-slider__ara-text {

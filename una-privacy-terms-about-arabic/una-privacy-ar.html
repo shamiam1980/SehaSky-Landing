@@ -10,9 +10,9 @@
    <title>صحة سكاي :: سياسة الخصوصية</title>
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <!-- Font Awesome -->
-   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+   <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
    <!-- Quicksand Google font -->
-   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
    <!-- Nunito Google font -->
    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet"> -->
    <!-- Tajawal Google font -- ARABIC TEXT FONT -->
@@ -489,6 +489,8 @@
       nav {
          padding: 0 0 3.5em 0;
          margin: 0 0 0 0;
+         display: flex;
+         justify-content: center;
       }
 
       nav h1 {
@@ -499,10 +501,8 @@
       nav ul {
          margin: 0 0 0 -22.5em;
          padding: 0;
-         float: left;
          position: absolute;
-         width: 45em;
-         left: 50%;
+         width: 80%;
          border: solid thin rgb(240, 240, 240);
          list-style: none outside;
       }
@@ -583,12 +583,61 @@
 
    /* ARABIC MEDIA QUERIES */
 
-   @media (max-width: 46.9em) {
 
-      .fa-user-md,
-      .fa-user-tie {
-         padding-left: 15px;
-         padding-right: 0;
+   /* LARGE MEDIA DEVICES */
+
+   @media (min-width: 46.9em) {
+
+      nav ul {
+         align-items: center;
+      }
+
+      nav li {
+         width: 20%;
+      }
+
+      nav a.menu-link {
+         text-align: center;
+         height: 40px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+   }
+
+   /* SMALL MEDIA DEVICES */
+
+   @media (max-width: 900px) {
+
+      nav ul {
+         width: 40em;
+         left: 55%;
+      }
+
+      nav a.menu-link {
+         font-size: 0.8em;
+      }
+   }
+
+   @media (max-width: 880px) {
+
+      header h1 {
+         font-size: 3rem;
+      }
+   }
+
+   @media (max-width: 650px) {
+
+      header h1 {
+         font-size: 2.5rem;
+      }
+   }
+
+   @media (max-width: 800px) {
+
+      nav.to-top {
+         left: 0;
+         padding-left: 1em;
       }
 
       nav.to-top.to-top-bottom {
@@ -597,12 +646,31 @@
       }
    }
 
-   @media (max-width: 360px) {
+   /* SMALL MEDIA DEVICES FINE-TUNING */
 
-      .fa-user-md,
-      .fa-user-tie {
-         padding-left: 10px;
-         padding-right: 0;
+   @media (max-width: 540px) {
+
+      nav.to-top {
+         left: -10px;
+         padding-top: 2.6em;
+      }
+   }
+
+   @media (max-width: 410px) {
+
+      nav.to-top {
+         left: -10px;
+         transform: scale(0.7);
+         padding-top: 3.2em;
+      }
+   }
+
+   @media (max-width: 392px) {
+
+      nav.to-top {
+         transform: scale(0.6);
+         padding-top: 0;
+         left: -30px;
       }
    }
 
@@ -1118,7 +1186,7 @@
 
 
    <!-- LOAD JQUERY -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 
    <script>
       // Jump to first Section on last arrow click

@@ -4,18 +4,21 @@
 <!-- NOTE: SEARCH FOR TITLE BLOCK : _sys_page_block_title_terms , AND CHANGE TEXT FROM 'Terms of Service' to 'Terms of Use' -->
 <!-- NOTE: SEARCH FOR TITLE BLOCK : _sys_page_title_terms , AND CHANGE TEXT FROM 'Terms of Service' to 'SehaSky :: Terms of Use' -->
 
-<html lang=en>
+<html dir="rtl" lang="ar">
 
 <head>
    <meta charset="utf-8" />
-   <title>SehaSky :: Terms of Use</title>
+   <title>صحة سكاي :: شروط الاستخدام</title>
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <!-- Font Awesome -->
    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
    <!-- Quicksand Google font -->
-   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
    <!-- Nunito Google font -->
    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet"> -->
+   <!-- Tajawal Google font -- ARABIC TEXT FONT -->
+   <link href="https://fonts.googleapis.com/css?family=Tajawal:400,700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Changa:300,400,700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -39,9 +42,22 @@
    h6,
    h7,
    p {
-      font-family: 'Nunito', 'Quicksand', 'Lato', Arial, sans-serif;
+      font-family: 'Tajawal', 'Nunito', 'Quicksand', 'Lato', Arial, sans-serif;
       color: #202020;
       overflow-x: hidden;
+   }
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   h7 {
+      font-family: 'Changa', 'Nunito', 'Quicksand', 'Lato', Arial, sans-serif;
+      color: #202020;
+      overflow-x: hidden;
+      font-size: 1.1rem;
    }
 
    section {
@@ -508,8 +524,10 @@
       /* Nav bar */
 
       nav {
-         padding: 0;
+         padding: 0 0 3.5em 0;
          margin: 0 0 0 0;
+         display: flex;
+         justify-content: center;
       }
 
       nav h1 {
@@ -518,15 +536,12 @@
       }
 
       nav ul {
-         margin: 0 auto;
+         margin: 0 0 0 -22.5em;
          padding: 0;
-         width: 90%;
+         position: absolute;
+         width: 60%;
          border: solid thin rgb(240, 240, 240);
          list-style: none outside;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         /* font-size: 0.7rem; */
       }
 
       nav li {
@@ -581,96 +596,266 @@
       display: inline-block;
       text-decoration: none;
    }
+
+
+   /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+
+   /* ARABIC PAGE STYLING */
+
+   /* ARABIC PAGE STYLING */
+
+   span.sehasky-english {
+      font-family: 'Quicksand';
+   }
+
+   .fa-user-md,
+   .fa-user-tie {
+      padding-left: 1rem;
+      padding-right: 0;
+   }
+
+   nav.to-top {
+      left: 2em;
+      right: auto;
+   }
+
+   nav.to-top a .fa-arrow-circle-up {
+      padding-left: 5px;
+      padding-right: 0;
+   }
+
+   .content-list {
+      margin-left: 0;
+      margin-right: 10%;
+   }
+
+   h1.main-heading-small {
+      display: none;
+   }
+
+   a.menu-link.account-responsibility-small {
+      display: none;
+   }
+
+   /* ARABIC MEDIA QUERIES */
+
+
+   /* LARGE MEDIA DEVICES */
+
+   @media (min-width: 46.9em) {
+
+      nav ul {
+         align-items: center;
+      }
+
+      nav li {
+         width: 20%;
+      }
+
+      nav a.menu-link {
+         text-align: center;
+         height: 40px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+   }
+
+   /* SMALL MEDIA DEVICES */
+
+   @media (max-width: 900px) {
+
+      nav ul {
+         width: 40em;
+         left: 55%;
+      }
+
+      nav a.menu-link {
+         font-size: 0.8em;
+      }
+   }
+
+   @media (max-width: 880px) {
+
+      header h1 {
+         font-size: 3rem;
+      }
+   }
+
+   @media (max-width: 46.9em) {
+
+      a.menu-link.account-responsibility-large {
+         display: none;
+      }
+
+      a.menu-link.account-responsibility-small {
+         display: block;
+      }
+   }
+
+   @media (max-width: 650px) {
+
+      header h1 {
+         font-size: 2.5rem;
+      }
+   }
+
+   @media (max-width: 800px) {
+
+      nav.to-top {
+         left: 0;
+         padding-left: 1em;
+      }
+
+      nav.to-top.to-top-bottom {
+         left: 10px;
+         right: auto;
+      }
+   }
+
+   /* SMALL MEDIA DEVICES FINE-TUNING */
+
+   @media (max-width: 540px) {
+
+      nav.to-top {
+         left: -10px;
+         padding-top: 2.6em;
+      }
+   }
+
+   @media (max-width: 490px) {
+
+      h1.main-heading-small {
+         display: block;
+      }
+
+      h1.main-heading-large {
+         display: none;
+      }
+   }
+
+   @media (max-width: 410px) {
+
+      nav.to-top {
+         left: -10px;
+         transform: scale(0.7);
+         padding-top: 3.2em;
+      }
+   }
+
+   @media (max-width: 392px) {
+
+      nav.to-top {
+         transform: scale(0.6);
+         padding-top: 0;
+         left: -30px;
+      }
+   }
+
+   @media (max-width: 360px) {
+
+      nav {
+         width: 90%;
+      }
+   }
+
+   /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 </style>
 
 <body>
 
    <header>
-      <h1>SehaSky Terms of Use</h1>
+      <h1>شروط استخدام صحة سكاي</h1>
    </header>
 
    <nav>
-      <h1 id="contents">Contents</h1>
+      <h1 id="contents">المحتويات</h1>
 
       <ul>
-         <li><a class="menu-link" href="#fundamentals">Fundamentals</a>
+         <li><a class="menu-link" href="#fundamentals">أساسيات</a>
             <ul class="child-menu-list">
-               <li><a class="menu-link" href="#fundamentals_why">Why is this information important?</a></li>
-               <li><a class="menu-link" href="#fundamentals_what">What is a SehaSky Account?</a></li>
+               <li><a class="menu-link" href="#fundamentals_why">لماذا تعتبر هذه المعلومات مهمة؟</a></li>
+               <li><a class="menu-link" href="#fundamentals_what">ما هو حساب <span
+                        class="sehasky-english">SehaSky</span>؟</a></li>
             </ul>
          </li>
 
-         <li><a class="menu-link" href="#services">Our Services</a>
+         <li><a class="menu-link" href="#services">خدماتنا</a>
             <ul class="child-menu-list">
-               <li><a class="menu-link" href="#services_phr">Personal Health Record (PHR)</a></li>
-               <li><a class="menu-link" href="#services_trusted">Trusted Access</a></li>
-               <li><a class="menu-link" href="#services_other">Other Services</a></li>
+               <li><a class="menu-link" href="#services_phr">السجل الصحي الشخصي <span
+                        class="sehasky-english">(PHR)</span></a></li>
+               <li><a class="menu-link" href="#services_trusted">إذن الدخول الآمن</a></li>
+               <li><a class="menu-link" href="#services_other">خدمات أخرى</a></li>
             </ul>
          </li>
 
-         <li><a class="menu-link" href="#account">Your Account</a>
+         <li><a class="menu-link" href="#account">حسابك</a>
             <ul class="child-menu-list">
-               <li><a class="menu-link" href="#account_how">How do I open a SehaSky account?</a></li>
-               <li><a class="menu-link" href="#account_comm">Communicating with you</a></li>
-               <li><a class="menu-link" href="#account_close">How do I close my account?</a></li>
-               <li><a class="menu-link" href="#account_protect">How is my account protected?</a></li>
-               <li><a class="menu-link" href="#account_restrictions">Are there any restrictions on using my account?</a>
+               <li><a class="menu-link" href="#account_how">كيف يمكنني فتح حساب <span
+                        class="sehasky-english">SehaSky</span>؟</a></li>
+               <li><a class="menu-link" href="#account_comm">التواصل معك</a></li>
+               <li><a class="menu-link" href="#account_close">كيف يمكنني إغلاق حسابي؟</a></li>
+               <li><a class="menu-link" href="#account_protect">كيف يتم حماية حسابي؟</a></li>
+               <li><a class="menu-link" href="#account_restrictions">هل هناك أي قيود على استخدام حسابي؟</a>
                </li>
-               <li><a class="menu-link" href="#account_block">When we might block or close your account?</a></li>
-               <li><a class="menu-link" href="#account_resposibility">Are you responsible if something goes wrong with
-                     my account or for information provided through the account?
+               <li><a class="menu-link" href="#account_block">متى يمكننا حظر حسابك أو إغلاقه؟</a></li>
+               <li>
+                  <a class="menu-link account-responsibility-large" href="#account_resposibility">هل أنت مسؤول إذا حدث
+                     خطأ ما في حسابي أو عن
+                     المعلومات المقدمة من خلال الحساب؟
+                  </a>
+                  <a class="menu-link account-responsibility-small" href="#account_resposibility">هل أنت مسؤول إذا حدث
+                     خطأ ما في حسابي <br> أو عن المعلومات المقدمة من خلال الحساب؟
                   </a>
                </li>
             </ul>
          </li>
 
-         <li><a class="menu-link" href="#changes">Changes to Terms</a>
+         <li><a class="menu-link" href="#changes">التغييرات على الشروط</a>
             <ul class="child-menu-list">
-               <li><a class="menu-link" href="#changes_subject">We can change these terms</a></li>
+               <li><a class="menu-link" href="#changes_subject">يمكننا تغيير هذه الشروط</a></li>
             </ul>
          </li>
 
-         <li><a class="menu-link" href="#complaints">Complaints</a>
+         <li><a class="menu-link" href="#complaints">الشكاوي</a>
             <ul class="child-menu-list">
-               <li><a class="menu-link" href="#complaints_contact">How to contact us or make a complaint?</a></li>
+               <li><a class="menu-link" href="#complaints_contact">كيفية الاتصال بنا أو تقديم شكوى؟</a></li>
             </ul>
          </li>
 
       </ul>
 
       <ul>
-         <li><a class="menu-link" href="#permission">Permission</a>
+         <li><a class="menu-link" href="#permission">الإذن</a>
             <ul class="child-menu-list">
-               <li><a class="menu-link" href="#permissions_process">Our permission to process your personal
-                     information
-                  </a>
+               <li><a class="menu-link" href="#permissions_process">إذننا لمعالجة معلوماتك الشخصية</a>
                </li>
             </ul>
          </li>
 
-         <li><a class="menu-link" href="#copyrights">Copyrights</a>
+         <li><a class="menu-link" href="#copyrights">حقوق النشر</a>
             <ul class="child-menu-list">
-               <li><a class="menu-link" href="#copyrights_property">Our intellectual property</a></li>
+               <li><a class="menu-link" href="#copyrights_property">ملكيتنا الفكرية</a></li>
             </ul>
          </li>
-         <li><a class="menu-link" href="#legal">Legal bits and pieces</a>
+         <li><a class="menu-link" href="#legal">تفاصيل بسيطة</a>
             <ul class="child-menu-list">
-               <li><a class="menu-link" href="#legal_contract">Our contract with you</a></li>
-               <li><a class="menu-link" href="#legal_transfer">Our right to transfer</a></li>
-               <li><a class="menu-link" href="#legal_law">English law applies</a></li>
-               <li><a class="menu-link" href="#legal_version">English version of the agreement applies</a></li>
-               <li><a class="menu-link" href="#legal_enforce">Our right to enforce the agreement</a></li>
-               <li><a class="menu-link" href="#legal_action">Taking legal action against us</a></li>
+               <li><a class="menu-link" href="#legal_contract">عقدنا معك</a></li>
+               <li><a class="menu-link" href="#legal_transfer">حقنا في النقل</a></li>
+               <li><a class="menu-link" href="#legal_law">ينطبق القانون الإنجليزي</a></li>
+               <li><a class="menu-link" href="#legal_version">تنطبق النسخة الإنجليزية من الاتفاقية</a></li>
+               <li><a class="menu-link" href="#legal_enforce">حقنا في فرض الاتفاقية</a></li>
+               <li><a class="menu-link" href="#legal_action">اتخاذ الإجراءات القانونية ضدنا</a></li>
             </ul>
          </li>
-         <li><a class="menu-link" href="#rights">Your Rights</a>
+         <li><a class="menu-link" href="#rights">حقوقك</a>
             <ul class="child-menu-list">
-               <li><a class="menu-link" href="#rights_info">Your information rights</a></li>
+               <li><a class="menu-link" href="#rights_info">حقوقك المعلوماتية</a></li>
             </ul>
          </li>
-         <li><a class="menu-link" href="#conduct">Conduct</a>
+         <li><a class="menu-link" href="#conduct">السلوك</a>
             <ul class="child-menu-list">
-               <li><a class="menu-link" href="#conduct_info">Website info on conduct</a></li>
+               <li><a class="menu-link" href="#conduct_info">معلومات عن السلوك بالموقع</a></li>
             </ul>
          </li>
 
@@ -681,486 +866,480 @@
 
       <section>
 
-         <h1 class="main-heading" id="fundamentals">Fundamentals</h1>
-         <h2 id="fundamentals_why">Why is this information important?</h2>
-         <p>This document sets out the terms and conditions for your SehaSky account and its related services,
-            regardless of whether you access your account through the website or the app, and regardless of whether you
-            choose to register with us. It also sets out other important things that you need to know. These terms and
-            conditions, along with the <a class="privacy-policy" href="https://sehasky.com/main/page/privacy">Privacy
-               Policy</a> and any other terms and conditions that apply to our services,
-            form a legal agreement (the agreement) between you, the account holder; and us, SehaSky Ltd trading as
-            SehaSky. You can see a copy of these terms and conditions through the SehaSky app or on the SehaSky website
-            at any time. To use all the functions of the app, you must be connected to the internet. It's important for
-            you to understand how your account works, so if you'd like more information you might find it helpful to
-            read our Frequently Asked Questions (FAQs).Use of the SehaSky service when accessed through our mobile
-            application shall also be subject to any applicable rules and policies of the relevant application store
-            (e.g. Apple App Store, Google Play) from which you download the Mobile App, as amended from time to time. If
-            you do not accept these terms, do not use the Website or the app. We may revise this legal notice at any
-            time by updating this posting and, if you are registered with us you will receive an email containing the
-            new terms and conditions.
+         <h1 class="main-heading" id="fundamentals">أساسيات</h1>
+         <h2 id="fundamentals_why">لماذا تعتبر هذه المعلومات مهمة؟</h2>
+         <p>تحدد هذه الوثيقة الشروط والأحكام الخاصة بحسابك في <span class="sehasky-english">SehaSky</span> والخدمات
+            المرتبطة به، بغض النظر عما إذا كنت قد قمت
+            بالوصول إلى حسابك من خلال الموقع الإلكتروني أو التطبيق، وبغض النظر عما إذا اخترت التسجيل معنا. كما أنه يحدد
+            أشياء أخرى مهمة تحتاج إلى معرفتها. تشكل هذه الشروط والأحكام، إلى جانب <a class="privacy-policy"
+               href="https://sehasky.com/main/page/privacy">سياسة الخصوصية</a> وأي
+            شروط وأحكام أخرى تنطبق على خدماتنا، اتفاقية قانونية (الاتفاقية) بينك أنت، صاحب الحساب؛
+            ولنا، شركة <span class="sehasky-english">SehaSky Ltd</span> المعروفة تجارياً بـ
+            <span class="sehasky-english">SehaSky</span>. يمكنك الاطلاع على نسخة من هذه الشروط والأحكام من خلال تطبيق
+            <span class="sehasky-english">SehaSky</span> أو على موقع <span class="sehasky-english">SehaSky</span> في أية
+            وقت.
+            لاستخدام جميع وظائف التطبيق، يجب أن تكون متصلا بالإنترنت. من المهم بالنسبة لك أن تفهم كيفية عمل حسابك، لذلك
+            إذا كنت ترغب في الحصول على مزيد من المعلومات، فقد تجد أنه من المفيد قراءة الأسئلة الشائعة (<span
+               class="sehasky-english">FAQs</span>).
+            يخضع استخدام خدمة <span class="sehasky-english">SehaSky</span> عند الوصول إليها من خلال تطبيق الهاتف المحمول
+            - حال إنشاؤه - أيضًا لأي قواعد وسياسات سارية
+            في متجر التطبيقات ذي الصلة (مثل متجر تطبيقات <span class="sehasky-english">Apple</span> أو <span
+               class="sehasky-english">Google Play</span>) الذي تقوم بتنزيل تطبيق الجوال منه، كما
+            يتم تعديله من وقت لآخر. إذا كنت لا تقبل هذه الشروط، لا تستخدم الموقع أو التطبيق. يجوز لنا مراجعة هذا الإشعار
+            القانوني في أي وقت من خلال تحديث هذا النشر، وإذا كنت مسجلاً معنا، فستتلقى رسالة بريد إلكتروني تحتوي على
+            الشروط والأحكام الجديدة.
          </p>
 
-         <h2 id="fundamentals_what">What is a SehaSky Account?</h2>
-         <p>A SehaSky account is an account that allows you access to all our services, including our app and website.
-            By creating an account, you are confirming that you have read, and accept, these Terms of Use, and our
-            <a class="privacy-policy" href="https://sehasky.com/main/page/privacy">Privacy
-               Policy</a>.
+         <h2 id="fundamentals_what">ما هو حساب SehaSky؟</h2>
+         <p>حساب <span class="sehasky-english">SehaSky</span> هو حساب يسمح لك بالوصول إلى جميع خدماتنا، بما في ذلك
+            تطبيقنا وموقعنا الإلكتروني. من خلال إنشاء
+            حساب، فإنك تؤكد أنك قد قرأت شروط الاستخدام هذه
+            <a class="privacy-policy" href="https://sehasky.com/main/page/privacy">سياسة الخصوصية</a> وقبلتهما.
          </p>
 
       </section>
 
-      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>back to top</a></nav>
+      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>العودة إلى الأعلى</a>
+      </nav>
 
       <section>
 
-         <h1 class="main-heading" id="services">Our Services</h1>
-         <h2 id="services_phr">Personal Health Record (PHR)</h2>
-         <p>The PHR is your personal record. It"s a place where you can store your own health information (such as
-            allergies, conditions, medications, documents, and measurements) and import information from various sources
-            in order to create a record which is as complete as possible. If you connect to another source of health
-            data (for example, your GP system using the GP access feature), we will copy information from that source
-            into your PHR so that it is always available to you. Your PHR is your data, you own it and you control it.
-            We will not give or sell it to anyone else unless you tell us to.
+         <h1 class="main-heading" id="services">خدماتنا</h1>
+         <h2 id="services_phr">السجل الصحي الشخصي (PHR)</h2>
+         <p><span class="sehasky-english">PHR</span> هو سجلك الشخصي. إنه مكان حيث يمكنك تخزين المعلومات الصحية الخاصة بك
+            (مثل الحساسية والحالات والأدوية
+            والوثائق والقياسات) واستيراد المعلومات من مصادر مختلفة من أجل إنشاء سجل كامل قدر الإمكان. إذا قمت بالاتصال
+            بمصدر آخر للبيانات الصحية (على سبيل المثال، نظام GP الخاص بك باستخدام ميزة الوصول إلى GP)، فسنقوم بنسخ
+            المعلومات من هذا المصدر إلى PHR بحيث تكون متاحة لك دائمًا. PHR الخاص بك هو البيانات الخاصة بك، كنت تملك ذلك
+            ويمكنك التحكم فيه. لن نعطيه أو بيعه لأي شخص آخر إلا إذا أخبرتنا بذلك.
             <br>
             <br>
-            Check our <a class="privacy-policy" href="https://sehasky.com/main/page/privacy">Privacy Policy</a> for more
-            details.
+            راجع <a class="privacy-policy" href="https://sehasky.com/main/page/privacy">سياسة الخصوصية</a> لمزيد من
+            التفاصيل.
          </p>
 
-         <h2 id="services_trusted">Trusted Access</h2>
-         <p>The Trusted Access feature gives you the option to give access to your selected data and/or your Doctor
-            record with other persons through the our application. Once the other person has created their account with
-            us and accepted your invitation, they will be able to see the information you have chosen to give them
-            access to. They will also be able to add entries into your PHR. If you decide to use the Trusted Access
-            feature, you acknowledge the following:
+         <h2 id="services_trusted">إذن الدخول الآمن</h2>
+         <p>تمنحك ميزة الوصول الموثوق خيار ًا لمنح الوصول إلى بياناتك المختارة و/أو سجل طبيبك مع أشخاص آخرين من خلال
+            تطبيقنا. بمجرد أن يقوم الشخص الآخر بإنشاء حسابه معنا وقبل دعوتك ، سيتمكن من رؤية المعلومات التي اخترتها
+            لمنحهم حق الوصول إليها. كما سيتمكنون من إضافة إدخالات إلى PHR الخاص بك. إذا قررت استخدام ميزة الوصول الموثوق
+            به، فإنك تقر بما يلي:
          </p>
          <ul class="content-list">
-            <li>You can choose to share parts of your record and keep other parts private;</li>
-            <li>You are responsible for ensuring that the email you have provided is correct for the person you
-               intend to give access to your information. We cannot verify or check this;</li>
-            <li>We cannot prevent the email address you submit being accessed by persons other than those whom you
-               intend to give access to your information;</li>
-            <li>We are not responsible for ensuring that the other person to whom you have given access can keep your
-               information confidential and secure, and that it is appropriate to give them access to such
-               information;</li>
-            <li>We cannot and do not take any responsibility for what the other person will do with your information,
-               for example:
+            <li>يمكنك اختيار مشاركة أجزاء من السجل الخاص بك والحفاظ على أجزاء أخرى خاصة؛</li>
+            <li>أنت مسؤول عن التأكد من أن البريد الإلكتروني الذي قدمته صحيح للشخص الذي تنوي منحه حق الوصول إلى معلوماتك.
+               لا يمكننا التحقق من ذلك أو التحقق منه؛
+            </li>
+            <li>لا يمكننا منع وصول الأشخاص غير الأشخاص الذين تنوي منحهم حق الوصول إلى معلوماتك من عنوان البريد
+               الإلكتروني الذي تقدمه؛</li>
+            <li>نحن لسنا مسؤولين عن ضمان أن الشخص الآخر الذي قمت بالوصول إليه يمكنه الحفاظ على سرية معلوماتك وأمانها،
+               وأنه من المناسب منحهم إمكانية الوصول إلى هذه المعلومات؛</li>
+            <li>لا يمكننا ولا نتحمل أي مسؤولية عما سيفعله الشخص الآخر بمعلوماتك، على سبيل المثال:
                <ol class="content-list ol-inside-ul">
                   <li>
-                     The other person may use their own means to download, save or store your record;
+                     قد يستخدم الشخص الآخر وسائله الخاصة لتنزيل سجلك أو حفظه أو تخزينه؛
                   </li>
                   <li>
-                     The other person may unintentionally or otherwise share your information with a third party;
+                     يجوز للشخص الآخر مشاركة معلوماتك عن غير قصد أو بطريقة أخرى مع طرف ثالث؛
                   </li>
                   <li>
-                     We do not carry out any checks or due diligence on the other person; and we cannot stop or force
-                     any person to delete your information once you have provided them with access.
+                     نحن لا نقوم بأي فحوصات أو العناية الواجبة على الشخص الآخر. ولا يمكننا إيقاف أو إجبار أي شخص على حذف
+                     معلوماتك بمجرد توفير إمكانية الوصول لهم.
                   </li>
                </ol>
             </li>
          </ul>
 
-         <h2 id="services_other">Other Services</h2>
+         <h2 id="services_other">خدمات أخرى</h2>
          <p>
-            From time to time we may make changes to the Services that are made available to you. This may be in the
-            form of improvements and enhancements to the existing Services and the addition of new functionality. We may
-            also remove certain Services at our sole discretion. Certain updates to the service may be mandatory and
-            failure by you to install them may result in the Service no longer being available to you.
+            من وقت لآخر قد نقوم بإجراء تغييرات على الخدمات التي يتم توفيرها لك. قد يكون هذا في شكل تحسينات وتحسينات على
+            الخدمات الحالية وإضافة وظائف جديدة. كما يجوز لنا إزالة بعض الخدمات وفقًا لتقديرنا الخاص. قد تكون بعض
+            التحديثات على الخدمة إلزامية وقد يؤدي الفشل في تثبيتها إلى عدم توفر الخدمة لك بعد الآن.
          </p>
 
       </section>
 
-      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>back to top</a></nav>
+      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>العودة إلى الأعلى</a>
+      </nav>
 
       <section>
 
-         <h1 class="main-heading" id="account">Your Account</h1>
-         <h2 id="account_how">How do I open a SehaSky account?</h2>
+         <h1 class="main-heading" id="account">حسابك</h1>
+         <h2 id="account_how">كيف يمكنني فتح حساب SehaSky؟</h2>
          <p>
-            Anyone who is a resident of Egypt and is 13 years of age or older and creates an account can use the
-            Service.
+            يمكن لأي شخص مقيم في مصر وعمره 13 عامًا أو أكثر وينشئ حسابًا استخدام الخدمة.
             <br>
             <br>
-            If you are under the age of 13 years (a "Child"), then you may only register for an account and use the
-            Service if prior consent has been given by your parent or guardian, and they have agreed to these terms, as
-            the party to this agreement, on your behalf.
+            إذا كان عمرك أقل من 13 عامًا ("طفل")، فلا يجوز لك التسجيل للحصول على حساب واستخدام الخدمة إلا إذا تم إعطاء
+            موافقة مسبقة من والديك أو الوصي عليك، ووافقوا على هذه الشروط، كطرف في هذه الاتفاقية، نيابة عنك.
             <br>
             <br>
-            By creating an account within the application on behalf of a Young Person, you are agreeing that you are the
-            Responsible Person for that Young Person and will take the necessary steps upon the Young Person reaching 13
-            years old, to enable the Young Person to take over their Personal Health Record. When you register for an
-            account it is important that you understand that each registration is for a single user only. We do not
-            permit you to share your username and password with any other person nor with multiple users on a network.
+            من خلال إنشاء حساب داخل التطبيق نيابة عن شاب، فإنك توافق على أنك الشخص المسؤول عن هذا الشاب وسوف تتخذ
+            الخطوات اللازمة على الشاب الذي يبلغ من العمر 13 عامًا، لتمكين الشاب من الاستيلاء على سجله الصحي الشخصي. عند
+            التسجيل لحساب من المهم أن تفهم أن كل تسجيل هو لمستخدم واحد فقط. نحن لا نسمح لك بمشاركة اسم المستخدم وكلمة
+            المرور الخاصة بك مع أي شخص آخر ولا مع العديد من المستخدمين على الشبكة. من أجل استخدام الخدمة، نطلب منك إنشاء
+            حساب من خلال تزويدنا باسمك وعنوان بريدك الإلكتروني وكلمة مرور قوية.
             <br>
             <br>
-            In order to use the Service, we require you to create an account by providing us with your name, email
-            address and a strong password. You are responsible for the activity that occurs in association with your
-            account. Responsibility for the security of any passwords issued rests with you. There are also some
-            technical requirements as to whether you can use the services.
+            أنت مسؤول عن النشاط الذي يحدث بالاشتراك مع حسابك. تقع المسؤولية عن أمن أي كلمات مرور صادرة عليك. هناك أيضًا
+            بعض المتطلبات الفنية حول ما إذا كان يمكنك استخدام الخدمات أم لا.
          </p>
 
-         <h2 id="account_comm">Communicating with you</h2>
+         <h2 id="account_comm">التواصل معك</h2>
          <p>
-            We'll usually communicate with you through the app or through the website, but we may also communicate with
-            you by email, so you should regularly check your email account. You can specify which types of communication
-            you would like to receive from us by declaring your preferences in the application.
+            سنتواصل معك عادة ً من خلال التطبيق - حال إنشاؤه - أو من خلال الموقع الإلكتروني، ولكننا قد نتواصل معك أيضًا
+            عن
+            طريق البريد
+            الإلكتروني، لذا يجب عليك التحقق بانتظام من حساب بريدك الإلكتروني. يمكنك تحديد أنواع الاتصالات التي ترغب في
+            تلقيها منا من خلال الإعلان عن تفضيلاتك في التطبيق.
             <br>
             <br>
-            Please keep your details up to date and let us know immediately if any information you've given us changes.
-            If we discover that any of your information is incorrect, we will update it.
+            يرجى تحديث بياناتك وإعلامنا على الفور إذا تغيرت أي معلومات قدمتها لنا. إذا اكتشفنا أن أي ًا من معلوماتك غير
+            صحيحة، فسنقوم بتحديثها.
          </p>
 
-         <h2 id="account_close">How do I close my account?</h2>
+         <h2 id="account_close">كيف يمكنني إغلاق حسابي؟</h2>
          <p>
-            You can close your account, and so end the agreement, at any time by letting us know. Please contact the
-            website administrator through <a class="privacy-policy" href="https://sehasky.com/main/page/contact">Contact
-               Us</a> form to request closure of your account.‍
+            يمكنك إغلاق حسابك، وبالتالي إنهاء الاتفاقية، في أي وقت من خلال إعلامنا. يرجى الاتصال بمسؤول الموقع من خلال
+            نموذج <a class="privacy-policy" href="https://sehasky.com/main/page/contact">الاتصال بنا</a> لطلب إغلاق
+            حسابك.
          </p>
 
-         <h2 id="account_protect">How is my account protected?</h2>
+         <h2 id="account_protect">كيف يتم حماية حسابي؟</h2>
          <p>
-            We will help keep your account and personal information safe, secure and private. Your account is password
-            protected to prevent unauthorised access by anyone else.
+            سوف نساعد في الحفاظ على حسابك ومعلوماتك الشخصية آمنة وآمنة وخاصة. حسابك محمي بكلمة مرور لمنع الوصول غير
+            المصرح به من قبل أي شخص آخر.
             <br>
             <br>
-            The data that is entered, transmitted and stored is encrypted to prevent any unauthorised use of the data.
+            يتم تشفير البيانات التي يتم إدخالها وإرسالها وتخزينها لمنع أي استخدام غير مصرح به للبيانات.
             <br>
             <br>
-            The electronic transmission of data over the internet is never completely secure but we endeavour to make
-            the service as secure as possible and provide a high level of security for your personal healthcare
-            information.
+            إن النقل الإلكتروني للبيانات عبر الإنترنت ليس آمنًا تمامًا أبدًا ، ولكننا نسعى إلى جعل الخدمة آمنة قدر
+            الإمكان وتوفير مستوى عالٍ من الأمان لمعلومات الرعاية الصحية الشخصية الخاصة بك.
             <br>
             <br>
-            You are also responsible for the safety of your information. You should choose a strong password and be sure
-            that you don't let anybody else know it. Keep your mobile phone and email account secure and don't let other
-            people use them. If you suspect that somebody else has used your account without permission, you should
-            reset your password immediately. If in doubt, please get in touch with us.
+            أنت مسؤول أيضًا عن سلامة معلوماتك. يجب عليك اختيار كلمة مرور قوية والتأكد من أنك لا تدع أي شخص آخر يعرف ذلك.
+            حافظ على أمان هاتفك المحمول وحساب البريد الإلكتروني ولا تدع الأشخاص الآخرين يستخدمونها. إذا كنت تشك في أن
+            شخصًا آخر قد استخدم حسابك دون إذن، فيجب عليك إعادة تعيين كلمة المرور الخاصة بك على الفور. إذا كنت في شك،
+            يرجى الاتصال بنا.
          </p>
 
-         <h2 id="account_restrictions">Are there any restrictions on using my account?</h2>
+         <h2 id="account_restrictions">هل هناك أي قيود على استخدام حسابي؟</h2>
          <p>
-            All that we ask is that you act reasonably and responsibly when using your account. Do not use it for
-            illegal purposes or in a way that might harm our ability to provide our services.
+            كل ما نطلبه هو أن تتصرف بشكل معقول ومسؤول عند استخدام حسابك. لا تستخدمها لأغراض غير قانونية أو بطريقة قد تضر
+            بقدرتنا على تقديم خدماتنا.
             <br>
             <br>
-            Please also act in a respectful way towards us and our support staff. We are here to help you :).
+            يرجى أيضا التصرف بطريقة محترمة تجاهنا وتجاه موظفي الدعم لدينا. نحن هنا لمساعدتك على ذلك :).
          </p>
 
-         <h2 id="account_block">When we might block or close your account?</h2>
+         <h2 id="account_block">متى يمكننا حظر حسابك أو إغلاقه؟</h2>
          <p>
-            The safety of your data is important to us. We might prevent you from accessing your account if we're
-            reasonably concerned about its security. We'll tell you before, or as soon as possible after, we block or
-            close your account. We'll also let you know why we've done it (unless it would reduce your or our security
-            or it would be unlawful). We may close or suspend your account immediately, and end your access to our
-            website, in exceptional circumstances or where we cease to provide this service. If we are ceasing to
-            provide the service, we will endeavour to let you know in advance.
+            سلامة البيانات الخاصة بك هو مهم بالنسبة لنا. قد نمنعك من الوصول إلى حسابك إذا كنا قلقين بشكل معقول بشأن
+            أمانه. سنخبرك قبل ذلك، أو في أقرب وقت ممكن بعد ذلك، بحظر حسابك أو إغلاقه. سنعلمك أيضًا لماذا فعلنا ذلك (ما
+            لم يكن من شأنه أن يقلل من أمانك أو أماننا أو سيكون غير قانوني). قد نقوم بإغلاق حسابك أو تعليقه على الفور،
+            وإنهاء وصولك إلى موقعنا الإلكتروني، في ظروف استثنائية أو حيث نتوقف عن تقديم هذه الخدمة. إذا كنا نكف عن تقديم
+            الخدمة، فإننا سنسعى إلى إعلامك مقدمًا.
          </p>
 
-         <h2 id="account_resposibility">Are you responsible if something goes wrong with
-            my account or for information provided through the account?</h2>
+         <h2 id="account_resposibility">هل أنت مسؤول إذا حدث خطأ ما في حسابي أو عن
+            المعلومات المقدمة من خلال الحساب؟</h2>
          <p>
-            We'll do as much as reasonably possible to make sure that our services are not interrupted, are available 24
-            hours a day and are accessible at a reasonable speed. However, we can't promise that this will always be the
-            case or that the services will be free from faults. We also rely on some third parties to provide services
-            to you, which can sometimes disrupt our services. we'll always do our best to solve any problems with our
-            services, no matter what the cause.
+            سنقوم بأكبر قدر ممكن من العمل للتأكد من عدم انقطاع خدماتنا، وتوفّر على مدار 24 ساعة في اليوم، ويمكن الوصول
+            إليها بسرعة معقولة. ومع ذلك ، لا يمكننا أن نعد بأن هذا سيكون هو الحال دائمًا أو أن الخدمات ستكون خالية من
+            الأخطاء. كما نعتمد على بعض الأطراف الثالثة لتقديم الخدمات لك، والتي يمكن أن تعطل في بعض الأحيان خدماتنا. سوف
+            نفعل دائما قصارى جهدنا لحل أي مشاكل مع خدماتنا، بغض النظر عن السبب.
             <br>
             <br>
-            We are not responsible for the accuracy, quality and use of all of the information which can be accessed and
-            viewed by you, but we are responsible for some of it.
+            نحن لسنا مسؤولين عن دقة وجودة واستخدام جميع المعلومات التي يمكن الوصول إليها وعرضها من قبلك ، لكننا مسؤولون
+            عن بعضها.
             <br>
             <br>
-            We are not responsible for your Doctor Record or the information it contains; we accept no liability for
-            information (whether accurate or not) on health advice, therapy, diagnosis and or treatment, in patient
-            information leaflets and/or the information contained in medical notes, consultation records and/or other
-            records. Sometimes we may direct you to external websites which may be accessed by and displayed on our
-            software; we accept no liability for the information (whether accurate or not) that they contain. We do
-            however make sure that the information that we provide to you is verified and that the references are
-            available to you, as more fully explained in the FAQs.
+            نحن لسنا مسؤولين عن سجل الطبيب الخاص بك أو المعلومات التي يحتوي عليها؛ نحن لا نتحمل أي مسؤولية عن المعلومات
+            (سواء كانت دقيقة أم لا) حول المشورة الصحية والعلاج والتشخيص أو العلاج، في نشرات معلومات المريض و / أو
+            المعلومات الواردة في الملاحظات الطبية، وسجلات الاستشارات و / أو غيرها من السجلات. في بعض الأحيان قد نوجهك
+            إلى مواقع ويب خارجية قد يتم الوصول إليها وعرضها على برنامجنا. نحن لا نقبل أي مسؤولية عن المعلومات (سواء كانت
+            دقيقة أم لا) التي تحتوي عليها. ومع ذلك، فإننا نتأكد من التحقق من المعلومات التي نقدمها لك وأن المراجع متاحة
+            لك، كما تم شرحها بشكل أكمل في الأسئلة الشائعة (<span class="sehasky-english">FAQs</span>).
          </p>
 
 
       </section>
 
-      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>back to top</a></nav>
+      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>العودة إلى الأعلى</a>
+      </nav>
 
       <section>
 
-         <h1 class="main-heading wide-heading" id="changes">Changes to Terms</h1>
+         <h1 class="main-heading wide-heading main-heading-large" id="changes">التغييرات على الشروط</h1>
+         <h1 class="main-heading wide-heading main-heading-small" id="changes">التغييرات <br> على الشروط</h1>
 
-         <h2 id="changes_subject">We can change these terms</h2>
+         <h2 id="changes_subject">يمكننا تغيير هذه الشروط</h2>
 
-         <p>We'll only change these terms and conditions for the following reasons:</p>
+         <p>سنقوم بتغيير هذه الشروط والأحكام فقط للأسباب التالية:</p>
 
          <ul class="content-list">
-            <li>If we think it will make them easier to understand or more helpful to you;</li>
-            <li>to reflect the way our business is run, particularly if the change is needed because of a change in the
-               way any technology is provided;</li>
-            <li>To reflect legal or regulatory requirements that apply to us;</li>
-            <li>To reflect changes in the cost of running our business;</li>
-            <li>Because we are changing or introducing new services or products that affect our existing services or
-               products covered by these terms and conditions.</li>
+            <li>إذا كنا نعتقد أنه سيجعلهم أسهل في الفهم أو أكثر فائدة لك؛</li>
+            <li>أن تعكس الطريقة التي تدار بها أعمالنا، خاصة إذا كانت هناك حاجة إلى التغيير بسبب تغيير في الطريقة التي
+               يتم بها توفير أي تكنولوجيا؛</li>
+            <li>تجسيد المتطلبات القانونية أو التنظيمية التي تنطبق علينا؛</li>
+            <li>تعكس التغيرات في تكلفة إدارة أعمالنا؛</li>
+            <li>لأننا نقوم بتغيير أو تقديم خدمات أو منتجات جديدة تؤثر على خدماتنا أو منتجاتنا الحالية التي تغطيها هذه
+               الشروط والأحكام.</li>
          </ul>
          <p>
-            If we add a new product or service that doesn't change the terms and conditions of your account, we may add
-            the product or service immediately and let you know before you use it.
+            إذا أضفنا منتجًا أو خدمة جديدة لا تغير شروط وأحكام حسابك، فقد نضيف المنتج أو الخدمة على الفور ونعلمك قبل
+            استخدامها.
             <br>
             <br>
-            Otherwise, you will be informed of the changes the next time you use the app or website.
+            وإلا، سيتم إعلامك بالتغييرات في المرة التالية التي تستخدم فيها التطبيق أو موقع الويب.
          </p>
 
       </section>
 
-      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>back to top</a></nav>
+      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>العودة إلى الأعلى</a>
+      </nav>
 
       <section>
 
-         <h1 class="main-heading" id="complaints">Complaints</h1>
+         <h1 class="main-heading" id="complaints">الشكاوي</h1>
 
-         <h2 id="complaints_contact">How to contact us or make a complaint?</h2>
-         <p>If you are unhappy with our service, we'll try to put things right. We always do our best, but we realise
-            that things sometimes go wrong. If you have a complaint or you'd just like to speak to someone about an
-            issue that's concerning you, please contact us.
+         <h2 id="complaints_contact">كيفية الاتصال بنا أو تقديم شكوى؟</h2>
+         <p>إذا كنت غير راض عن خدمتنا، سنحاول وضع الأمور في نصابها الصحيح. نحن دائما ً نبذل قصارى جهدنا، لكننا ندرك أن
+            الأمور تسوء أحياناً. إذا كان لديك شكوى أو كنت ترغب فقط في التحدث إلى شخص ما حول مشكلة تتعلق بك، يرجى الاتصال
+            بنا.
             <br>
             <br>
-            You will ideally need to tell us:
+            سوف تحتاج بشكل مثالي ليقول لنا:
             <ul class="content-list">
-               <li>Your name;</li>
-               <li>The phone number and email address associated with your account;</li>
-               <li>When the problem arose; and</li>
-               <li>How you'd like us to put the matter right.</li>
+               <li>اسمك؛</li>
+               <li>رقم الهاتف وعنوان البريد الإلكتروني المرتبطب حسابك؛</li>
+               <li>متى بدأت المشكلة؛ و</li>
+               <li>كيف تريدنا أن نعيد المسألة إلى إطارها الصحيح</li>
             </ul>
          </p>
-         <p>We will look into your complaint and respond to you by the same method you used to contact us. We will
-            communicate with you in English or Aabic unless we tell you otherwise. If you want to write to us, you can
-            use our main email address <a href="mailto:info@sehasky.com" target="_top">info@sehasky.com</a></p>
-
-      </section>
-
-      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>back to top</a></nav>
-
-      <section>
-
-         <h1 class="main-heading" id="permission">Permission</h1>
-
-         <h2 id="permissions_process">Our permission to process your personal
-            information</h2>
-         <p>To provide services under the agreement we need to collect information about you. Under data protection law,
-            we are what is known as the "data controller" of your personal information. For more information about how
-            we use your personal information, check our <a class="privacy-policy"
-               href="https://sehasky.com/main/page/privacy">Privacy Policy</a>.
-            <br>
-            <br>
-            By entering into the agreement, you are giving us permission to gather, process and store your personal
-            information for the purpose of providing our services to you. This doesn't affect any rights and obligations
-            you or we have under data protection law.
-            <br>
-            <br>
-            You can withdraw your permission by closing your account, which will end the agreement between you and us.
-            If you do this, we'll stop using your information for the purpose of providing our services, but we may need
-            to keep your information for other legal reasons.
+         <p>سننظر في شكواك ونرد عليك بنفس الطريقة التي استخدمتها للاتصال بنا. سوف نتواصل معك باللغة الإنجليزية أو
+            العربية
+            ما لم نخبرك بخلاف ذلك. إذا كنت ترغب في الكتابة إلينا، يمكنك استخدام عنوان البريد الإلكتروني الرئيسي <a
+               href="mailto:info@sehasky.com" target="_top"><span class="sehasky-english">info@sehasky.com</span></a>
          </p>
 
       </section>
 
-      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>back to top</a></nav>
+      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>العودة إلى الأعلى</a>
+      </nav>
 
       <section>
 
-         <h1 class="main-heading" id="copyrights">Copyrights</h1>
+         <h1 class="main-heading" id="permission">الإذن</h1>
 
-         <h2 id="copyrights_property">Our intellectual property</h2>
-
-         <p>
-            We own all the intellectual property in our products (for example, the content in our app and on our website
-            and our logo). You must not use our intellectual property as your own, except to enjoy our products. You
-            also must not reverse-engineer any of our products (that is, reproduce them after a detailed examination of
-            their construction or composition).
+         <h2 id="permissions_process">إذننا لمعالجة معلوماتك الشخصية</h2>
+         <p>لتقديم الخدمات بموجب الاتفاقية ، نحتاج إلى جمع معلومات عنك. بموجب قانون حماية البيانات، نحن ما يعرف باسم
+            "وحدة تحكم البيانات" لمعلوماتك الشخصية. لمزيد من المعلومات حول كيفية استخدامنا لمعلوماتك الشخصية، راجع <a
+               class="privacy-policy" href="https://sehasky.com/main/page/privacy">سياسة الخصوصية</a> الخاصة بنا.
+            <br>
+            <br>
+            من خلال الدخول في الاتفاقية، فإنك تمنحنا الإذن بجمع معلوماتك الشخصية ومعالجتها وتخزينها بغرض تقديم خدماتنا
+            لك. هذا لا يؤثر على أي حقوق والتزامات لك أو لدينا بموجب قانون حماية البيانات. يمكنك سحب إذنك عن طريق إغلاق
+            حسابك، مما سينهي الاتفاقية بينك وبيننا.
+            <br>
+            <br>
+            إذا قمت بذلك، فسوف نتوقف عن استخدام معلوماتك لغرض تقديم خدماتنا، ولكننا قد نحتاج إلى الاحتفاظ بمعلوماتك
+            لأسباب قانونية أخرى.
          </p>
 
       </section>
 
-      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>back to top</a></nav>
+      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>العودة إلى الأعلى</a>
+      </nav>
 
       <section>
 
-         <h1 class="main-heading wide-heading" id="legal">Legal bits and pieces</h1>
+         <h1 class="main-heading" id="copyrights">حقوق النشر</h1>
 
-         <h2 id="legal_contract">Our contract with you</h2>
-         <p>
-            Only you and we have any rights under the agreement. The agreement is personal to you and you cannot
-            transfer any rights or obligations under it to anyone else.
-         </p>
+         <h2 id="copyrights_property">ملكيتنا الفكرية</h2>
 
-         <h2 id="legal_transfer">Our right to transfer</h2>
          <p>
-            We will only transfer any of your and our rights or obligations under the agreement if we reasonably think
-            that this won't have a significant negative effect on your rights under these terms and conditions or we
-            need to do so to keep to any legal or regulatory requirement. When we transfer rights and obligations, we
-            call this "novation". When we only transfer rights, we call this "assignment".
-         </p>
-
-         <h2 id="legal_law">English law applies</h2>
-         <p>
-            The laws of England and Wales apply to these terms and conditions.
-         </p>
-
-         <h2 id="legal_version">English version of the agreement applies</h2>
-         <p>
-            If these terms and conditions are translated into another language, the translation is for reference only
-            and the English version will apply.
-         </p>
-
-         <h2 id="legal_enforce">Our right to enforce the agreement</h2>
-         <p>
-            If you have broken the agreement between you and us and we don't enforce our rights, or we delay in
-            enforcing them, this will not prevent us from enforcing those or any other rights at a later date.
-         </p>
-
-         <h2 id="legal_action">Taking legal action against us</h2>
-         <p>
-            If you want to take legal action against us in the courts, only the courts of England and Wales can deal
-            with any matter relating to these terms and conditions.
+            نحن نملك جميع الملكية الفكرية في منتجاتنا (على سبيل المثال، المحتوى في التطبيق لدينا وعلى موقعنا على
+            الانترنت وشعارنا). يجب عليك عدم استخدام الملكية الفكرية الخاصة بك، إلا للاستمتاع منتجاتنا. يجب عليك أيضا عدم
+            عكس الهندسة أي من منتجاتنا (أي إعادة إنتاجها بعد دراسة مفصلة لبنائها أو تكوينها).
          </p>
 
       </section>
 
-      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>back to top</a></nav>
+      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>العودة إلى الأعلى</a>
+      </nav>
 
       <section>
 
-         <h1 class="main-heading" id="rights">Your Rights</h1>
+         <h1 class="main-heading wide-heading main-heading-large" id="legal">تفاصيل قانونية بسيطة</h1>
+         <h1 class="main-heading wide-heading main-heading-small" id="legal">تفاصيل قانونية <br> بسيطة</h1>
 
-         <h2 id="rights_info">Your information rights</h2>
+         <h2 id="legal_contract">عقدنا معك</h2>
          <p>
-            SehaSky is the Data Controller for the data that we process. This term is a legal phrase used to describe a
-            person or entity that controls the way data is used and processed.
+            فقط أنت ونحن لدينا أي حقوق بموجب الاتفاق. الاتفاقية شخصية لك ولا يمكنك نقل أي حقوق أو التزامات بموجبها إلى
+            أي شخص آخر.
+         </p>
+
+         <h2 id="legal_transfer">حقنا في النقل</h2>
+         <p>
+            سنقوم فقط بنقل أي من حقوقك وحقوقنا أو التزاماتنا بموجب الاتفاقية إذا كنا نعتقد بشكل معقول أن هذا لن يكون له
+            تأثير سلبي كبير على حقوقك بموجب هذه الشروط والأحكام أو نحتاج إلى القيام بذلك للحفاظ على أي متطلبات قانونية
+            أو تنظيمية. عندما ننقل الحقوق والالتزامات، فإننا نطلق على هذا "التجديد". عندما نقوم فقط بنقل الحقوق، فإننا
+            نسمي هذا "الإحالة".
+         </p>
+
+         <h2 id="legal_law">ينطبق القانون الإنجليزي</h2>
+         <p>
+            تنطبق قوانين إنجلترا وويلز على هذه الشروط والأحكام.
+         </p>
+
+         <h2 id="legal_version">تنطبق النسخة الإنجليزية من الاتفاقية</h2>
+         <p>
+            إذا تمت ترجمة هذه الشروط والأحكام إلى لغة أخرى، فإن الترجمة هي للرجوع إليها فقط وسيتم تطبيق النسخة
+            الإنجليزية.
+         </p>
+
+         <h2 id="legal_enforce">حقنا في فرض الاتفاقية</h2>
+         <p>
+            إذا كنت قد خرقت الاتفاق بينك وبيننا ولم نفرض حقوقنا، أو تأخرنا في إنفاذها، فإن هذا لن يمنعنا من إنفاذ هذه
+            الحقوق أو أي حقوق أخرى في وقت لاحق.
+         </p>
+
+         <h2 id="legal_action">اتخاذ الإجراءات القانونية ضدنا</h2>
+         <p>
+            إذا كنت ترغب في اتخاذ إجراءات قانونية ضدنا في المحاكم، فإن محاكم إنجلترا وويلز فقط هي التي يمكنها التعامل مع
+            أي مسألة تتعلق بهذه الشروط والأحكام.
+         </p>
+
+      </section>
+
+      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>العودة إلى الأعلى</a>
+      </nav>
+
+      <section>
+
+         <h1 class="main-heading" id="rights">حقوقك</h1>
+
+         <h2 id="rights_info">حقوقك المعلوماتية</h2>
+         <p>
+            <span class="sehasky-english">SehaSky</span> هو مراقب البيانات للبيانات التي نعالجها. هذا المصطلح عبارة
+            قانونية تستخدم لوصف شخص أو كيان يتحكم في
+            طريقة استخدام البيانات ومعالجتها.
          </p>
          <p>
-            The General Data Protection Regulation gives you a number of rights as a data subject. These rights are
-            listed below:
+            تمنحك اللائحة العامة لحماية البيانات عددًا من الحقوق كموضوع للبيانات. وفيما يلي هذه الحقوق:
             <ul class="content-list">
-               <li>You have the right to know how we will use your personal information.</li>
-               <li>You have the right to be provided with a copy of your record (the information we hold about you).
-                  This
-                  is known as a Subject Access Request. This information is available to you through the App, but if you
-                  wish to check our full records, please let us know.
+               <li>لديك الحق في معرفة كيفية استخدامنا لمعلوماتك الشخصية.</li>
+               <li>لديك الحق في الحصول على نسخة من سجلك (المعلومات التي نحتفظ بها عنك). يُعرف هذا بطلب الوصول إلى
+                  الموضوع. هذه المعلومات متاحة لك من خلال التطبيق، ولكن إذا كنت ترغب في التحقق من سجلاتنا الكاملة،
+                  واسمحوا لنا أن نعرف.
                </li>
-               <li>You have the right to object to us making use of your information for any specific purpose. This is
-                  addressed in the "Consent" and "Communications Preferences" sections of the App and Website. You may
-                  change your consent options at any time. We will monitor these consent records and ensure that your
-                  wishes and changes are respected.</li>
-               <li>You have the right to rectify any information in your PHR which you believe is inaccurate. As you
-                  have
-                  control of your PHR through the App, you will normally be able to make changes yourself, but if you
-                  believe that we have made an error, or you are unable to make a correction, please contact us. Please
-                  remember that you control what information you and anyone you give sharing rights to, is recorded in
-                  your
-                  Personal Health Record. It is not therefore intended that we routinely review or verify the accuracy
-                  of
-                  any of this information.</li>
-               <li>You have the right to be forgotten. Your App allows you to delete your record at any time. Please let
-                  us
-                  know if you wish us to delete your data and we will confirm that your data has been removed from our
-                  records.
+               <li>لديك الحق في الاعتراض على استخدامنا لمعلوماتك لأي غرض محدد. يتم تناول هذا الأمر في قسمي "الموافقة"
+                  و"تفضيلات الاتصالات" في التطبيق والموقع الإلكتروني. يمكنك تغيير خيارات الموافقة الخاصة بك في أي وقت.
+                  سوف نراقب سجلات الموافقة هذه ونضمن احترام رغباتك وتغييراتك.</li>
+               <li>لديك الحق في تصحيح أي معلومات في <span class="sehasky-english">PHR</span> الخاص بك والتي تعتقد
+                  أنها غير دقيقة. كما لديك السيطرة على <span class="sehasky-english">PHR</span>
+                  الخاص بك من خلال التطبيق، وسوف تكون عادة قادرة على إجراء تغييرات نفسك، ولكن إذا كنت تعتقد أننا قد
+                  ارتكبنا خطأ، أو كنت غير قادر على إجراء تصحيح، يرجى الاتصال بنا. يرجى تذكر أنك تتحكم في المعلومات التي
+                  تقوم بها أنت وأي شخص تعطيه حقوق المشاركة، ويتم تسجيلها في سجل الصحة الشخصية الخاص بك. ولذلك لا يقصد
+                  منا أن نراجع أو نتحقق بشكل روتيني من دقة أي من هذه المعلومات.</li>
+               <li>لديك الحق في أن تنسى. يسمح لك تطبيقك بحذف سجلك في أي وقت. يرجى إعلامنا إذا كنت ترغب في حذف بياناتك
+                  وسنؤكد أن بياناتك قد تمت إزالتها من سجلاتنا.
                </li>
-               <li>You have the right to transfer your data to another service provider. If you wish to do this, let us
-                  know and we will provide the information in an electronic format.
+               <li>لديك الحق في نقل بياناتك إلى مزود خدمة آخر. إذا كنت ترغب في القيام بذلك، اسمحوا لنا أن نعرف وسوف نقدم
+                  المعلومات في شكل إلكتروني.
                </li>
-               <li>You have the right to object to any automated decision making, however we do not carry out any
-                  automated
-                  decision making within our systems.
+               <li>لديك الحق في الاعتراض على أي عملية اتخاذ قرارات آلية، ولكننا لا نقوم بأي عملية اتخاذ قرارات آلية داخل
+                  أنظمتنا.
                </li>
             </ul>
          </p>
 
          <p>
-            You can make a complaint to the Information Commissioner"s Office (the UK data protection regulatory) ICO at
-            any time about the way we use your information. However, we hope that you would first consider raising with
-            us any issue or complaint you have about how we handle your personal information. Your trust is extremely
-            important to us, and we will always do our very best to promptly resolve any problems you may have in this
-            regard.
+            يمكنك تقديم شكوى إلى مكتب مفوض المعلومات (تنظيم حماية البيانات في المملكة المتحدة) <span
+               class="sehasky-english">(ICO)</span> في أي وقت حول الطريقة
+            التي نستخدم بها معلوماتك. ومع ذلك، نأمل أن تفكر أولاً في إثارة أي مشكلة أو شكوى لديك حول كيفية تعاملنا مع
+            معلوماتك الشخصية. ثقتكم في غاية الأهمية بالنسبة لنا، وسوف نفعل دائما قصارى جهدنا لحل أي مشاكل قد تكون لديكم
+            في هذا الصدد على وجه السرعة.
             <br>
             <br>
-            For the full information of how we use our data, please read our <a class="privacy-policy"
-               href="https://sehasky.com/main/page/privacy">Privacy
-               Policy</a>
+            للحصول على معلومات كاملة عن كيفية استخدامنا لبياناتنا، يرجى قراءة <a class="privacy-policy"
+               href="https://sehasky.com/main/page/privacy">سياسة الخصوصية</a> الخاصة بنا.
          </p>
 
 
       </section>
 
-      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>back to top</a></nav>
+      <nav class="to-top"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>العودة إلى الأعلى</a>
+      </nav>
 
       <section>
 
-         <h1 class="main-heading" id="conduct">Conduct</h1>
+         <h1 class="main-heading" id="conduct">السلوك</h1>
 
-         <h2 id="conduct_info">Website info on conduct</h2>
+         <h2 id="conduct_info">معلومات عن السلوك بالموقع</h2>
 
          <p>
-            Other than personally identifiable information, which is covered under our <a class="privacy-policy"
-               href="https://sehasky.com/main/page/privacy">Privacy
-               Policy</a>, any material you transmit or post to our Website shall be considered non-confidential and
-            non-proprietary. We shall have no obligations with respect to such material. We and our designers shall be
-            free to copy, disclose, distribute, incorporate and otherwise use such material and all data, images,
-            sounds, text and other things embodied therein for any and all commercial or non-commercial purposes.
+            بخلاف المعلومات الشخصية، التي تغطيها <a class="privacy-policy"
+               href="https://sehasky.com/main/page/privacy">سياسة الخصوصية</a> الخاصة بنا، فإن أي مواد ترسلها أو تنشرها
+            على موقعنا الإلكتروني تعتبر غير سرية وغير مملوكة.
+            ولن تكون لدينا التزامات فيما يتعلق بهذه المواد. نحن ومصممينا أحرار في نسخ هذه المواد والكشف عنها وتوزيعها
+            ودمجها واستخدامها على خلاف ذلك وجميع البيانات والصور والأصوات والنصوص وغيرها من الأشياء المجسدة فيها لأي
+            أغراض تجارية أو غير تجارية.
             <br>
             <br>
-            You are prohibited from posting or transmitting to or from our Website any material:
+            يحظر
+            عليك نشر أو نقل أي مواد إلى موقعنا أو منه، مثل:
             <ul class="content-list">
-               <li>that is threatening, defamatory, obscene, indecent, seditious, offensive, pornographic, abusive,
-                  liable
-                  to incite racial hatred, discriminatory, menacing, scandalous, inflammatory, blasphemous, in breach of
-                  confidence, in breach of privacy or which may cause annoyance or inconvenience; or
+               <li>التي تهدد، تشهيرية، فاحشة، غير لائقة، مثيرة للفتنة، مسيئة، إباحية، مسيئة، يمكن أن تحرض على الكراهية
+                  العنصرية، تمييزية، تهديدية، فاضحة، تحريضية، تجديف، في انتهاك للثقة، في انتهاك للخصوصية أو التي قد يسبب
+                  إزعاجًا؛ أو
                </li>
-               <li>for which you have not obtained all necessary licences and/or approvals; or</li>
-               <li>which constitutes or encourages conduct that would be considered a criminal offence, give rise to
-                  civil liability, or otherwise be contrary to the law of or infringe the rights of any third party, in
-                  any country in the world; or
+               <li>التي لم تحصل على جميع التراخيص و/أو الموافقات اللازمة لها؛ أو</li>
+               <li>الذي يشكل أو يشجع على سلوك يعتبر جريمة جنائية، أو يؤدي إلى مسؤولية مدنية، أو يتعارض مع قانون أو ينتهك
+                  حقوق أي طرف ثالث، في أي بلد من بلدان العالم؛ أو
                </li>
-               <li>which is technically harmful (including, without limitation, computer viruses, logic bombs, Trojan
-                  horses, worms, harmful components, corrupted data or other malicious software or harmful data).
+               <li>ما هو ضار تقنيًا (بما في ذلك، على سبيل المثال لا الحصر، فيروسات الكمبيوتر أو القنابل المنطقية أو
+                  أحصنة طروادة أو الديدان البرمجية أو المكونات الضارة أو البيانات التالفة أو غيرها من البرامج أو
+                  البيانات
+                  الضارة).
                </li>
             </ul>
          </p>
 
          <p>
-            You may not misuse our Website (including, without limitation, by hacking).
+            لا يجوز لك إساءة استخدام موقعنا الإلكتروني (بما في ذلك، على سبيل المثال لا الحصر، عن طريق القرصنة).
             <br>
             <br>
-            We shall fully co-operate with any law enforcement authorities or court order requesting or directing us to
-            disclose the identity or locate anyone posting any material in breach of this clause.
+            سوف نتعاون بشكل كامل مع أي سلطات إنفاذ القانون أو أمر المحكمة التي تطلب أو توجهنا للكشف عن الهوية أو تحديد
+            موقع أي شخص ينشر أي مواد تنتهك هذا البند.
             <br>
             <br>
-            Links to third party websites on our Website are provided solely for your convenience. If you use these
-            links, you leave our Website. We have not reviewed all of these third party websites and do not control and
-            are not responsible for these websites or their content or availability. We therefore do not endorse or make
-            any representations about them, or any material found there, or any results that may be obtained from using
-            them. If you decide to access any of the third party websites links on our Website, you do so entirely at
-            your own risk.
+            يتم توفير روابط لمواقع الطرف الثالث على موقعنا الإلكتروني فقط لراحتك. إذا كنت تستخدم هذه الروابط، فإنك تغادر
+            موقعنا الإلكتروني. نحن لم نراجع جميع هذه المواقع التابعة لأطراف ثالثة ولا نتحكم ولا نتحمل المسؤولية عن هذه
+            المواقع أو محتواها أو توافرها. لذلك نحن لا نؤيد أو نقدم أي إقرارات عنهم، أو أي مواد وجدت هناك، أو أي نتائج
+            قد يتم الحصول عليها من استخدامها. إذا قررت الوصول إلى أي من روابط مواقع الطرف الثالث على موقعنا، فإنك تفعل
+            ذلك على مسؤوليتك الخاصة.
             <br>
             <br>
-            If you would like to link to our Website, you may only do so on the basis that you link to, but do not
-            replicate, the home page of the Website, and subject to the following conditions:
+            إذا كنت ترغب في الارتباط بموقعنا الإلكتروني، يمكنك القيام بذلك فقط على أساس أنك ترتبط بالصفحة الرئيسية
+            للموقع، ولكن لا تكررها، وتخضع للشروط التالية:
             <ul class="content-list">
-               <li>You do not remove, distort or otherwise alter the size or appearance of the SehaSky&trade;; logo;
+               <li>لا تقم بإزالة أو تشويه أو تغيير حجم أو مظهر شعار <span class="sehasky-english">SehaSky&trade;</span>؛
                </li>
-               <li>You do not create a frame or any other browser or border environment around our Website;</li>
-               <li>You do not in any way imply that we endorse any products or services other than our own;</li>
-               <li>You do not misrepresent your relationship with us nor present any other false information about us;
-               </li>
-               <li>You do not otherwise use any SehaSky trademarks displayed on our Website without express written
-                  permission from us;</li>
-               <li>Your website does not contain content that is distasteful, offensive or controversial, infringes any
-                  intellectual property rights or other rights of any other person or otherwise does not comply with all
-                  applicable laws and regulations.
+               <li>لا تنشئ إطارًا أو أي متصفح آخر أو بيئة حدودية حول موقعنا؛</li>
+               <li>لا توحي بأي شكل من الأشكال أننا نؤيد أي منتجات أو خدمات غير منتجاتنا؛</li>
+               <li>لا تشوه علاقتك معنا ولا تقدم أي معلومات خاطئة أخرى عنا؛</li>
+               <li>لا تستخدم أي علامات تجارية بخلاف SehaSky trademarks لعرضها على كوقعنا بدون الحصول على إذن كتابي منا
+                  بذلك؛</li>
+               <li>ألا يحتوي موقع الويب الخاص بك على محتوى مقيت أو مسيء أو مثير للجدل أو ينتهك أي حقوق ملكية فكرية أو
+                  حقوق أخرى لأي شخص آخر أو لا يتوافق مع جميع القوانين واللوائح المعمول بها.
                </li>
             </ul>
          </p>
 
-         <nav class="to-top to-top-bottom"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>back to
-               top</a></nav>
+         <nav class="to-top to-top-bottom"><a class="back-to-top" href="#"><i class="fas fa-arrow-circle-up"></i>العودة
+               إلى الأعلى</a></nav>
 
       </section>
 

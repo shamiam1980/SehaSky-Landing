@@ -221,7 +221,18 @@ polygon {
     
 }
 
-a.english-page {
+.section-1 a:hover {
+    background-color: #602859;
+    color: #fff;
+}
+
+.section-1 .left img.header_image {
+    position: absolute;
+    left: 0;
+    top: 15%;
+}
+
+a.english_link {
     position: absolute;
     top: 0;
     right: 0;
@@ -247,16 +258,51 @@ a.english-page {
             border-radius: 10px;
 }
 
-.section-1 a:hover {
-    background-color: #602859;
-    color: #fff;
+div.login-box {
+    position: absolute;
+    bottom: 130px;
+    right: 20px;
+    margin: 0;
+    font-family: "FF Hekaya", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 3rem;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
 }
 
-.section-1 .left img.header_image {
-    position: absolute;
-    left: 0;
-    top: 15%;
+div.login-box h4 {
+    font-size: 1rem;
 }
+
+.section-1 div.login-box a.login_link {
+    font-size: 0.9rem;
+    font-weight: normal;
+    width: 80px;
+    height: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+}
+
 
 /* SECTION ( 2 ) */
 
