@@ -77,6 +77,9 @@ $(document).ready(function () {
 
   // SECTION ( 1 )
 
+  // SOLVE CHROME ANDROID TASKBAR WITH 100VH HEIGHT
+  $('.section-1').css({ height: window.innerHeight });
+
   // Tree Animation [ Section-1 Moving clouds behind tree ]
 
   var treePoly = $('#tree > polygon'),

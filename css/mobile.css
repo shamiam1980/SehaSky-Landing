@@ -41,6 +41,7 @@ div {
 
 .section-1 {
   background-color: #fff;
+  min-height: -webkit-fill-available;
 }
 
 /* .section-1 .wave-1, .section-1 .wave-2 {
