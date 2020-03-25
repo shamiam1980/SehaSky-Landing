@@ -177,6 +177,8 @@ polygon {
     width: 30%;
     position: relative;
     right: -1500px;
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
@@ -187,16 +189,16 @@ polygon {
     transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
 }
 
-.section-1 .right .logo:hover {
+/* .section-1 .right .logo:hover {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1);
-    -webkit-transition: -webkit-transform 0.1s ease-in-out;
-    transition: -webkit-transform 0.1s ease-in-out;
-    -o-transition: transform 0.1s ease-in-out;
-    transition: transform 0.1s ease-in-out;
-    transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
-}
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+} */
 
 .section-1 .right h1 {
     font-size: 5rem;
@@ -766,7 +768,7 @@ button.submit-button {
 
 .section-5-social__container {
     position: relative;
-    top: 10vh;
+    top: 4vh;
 }
 
 .section-5-social {
