@@ -61,6 +61,30 @@
 
 <body style="overflow-x: hidden;">
 
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v6.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat" attribution=install_email page_id="113904373485406" theme_color="#7646ff">
+  </div>
+
+  <!-- Preloader -->
   <div class="preloader">
     <hr />
     <hr />
@@ -172,16 +196,19 @@
           <img class="logo" src="/img/header_logo-gif.gif" alt="logo">
           <h1>SehaSky</h1>
           <h2 class="main-title">The first medical community in the Arab World</h2>
-          <a class="know-more_link" href="https://sehasky.com/main/page/create-account?lang=en" style="direction: ltr;">
-            Register Now!
-          </a>
+          <div class="register_login_box">
+            <a class="know-more_link" href="https://sehasky.com/main/page/create-account?lang=en"
+              style="direction: ltr;">
+              Register Now!
+            </a>
+            <div class="login-box" style="direction: ltr;">
+              <h4>Already a SehaSky member?</h4>
+              <a class="login_link button is-info" href="https://www.sehasky.com/main/page/login?lang=en">Login</a>
+            </div>
+          </div>
         </div>
       </div>
       <a class="english_link button is-info" href="/mobile-ar.html">ع</a>
-      <div class="login-box" style="direction: ltr;">
-        <h4>Already a SehaSky member?</h4>
-        <a class="login_link button is-info" href="https://www.sehasky.com/main/page/login?lang=en">Login</a>
-      </div>
     </section>
 
     <section class="section section-2">

@@ -167,11 +167,9 @@ polygon {
     padding-top: 2rem;
 }
 
-/* .section-1 .right {
-    position: relative;
-    top: -30px;
-    left: 60px;
-} */
+.section-1 .right {
+    padding-top: 0;
+}
 
 .section-1 .right .logo {
     width: 30%;
@@ -260,11 +258,30 @@ a.english_link {
             border-radius: 10px;
 }
 
+div.register_login_box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+}
+
 div.login-box {
-    position: absolute;
-    bottom: 130px;
-    right: 20px;
     margin: 0;
+    margin-top: 20px;
     font-family: "FF Hekaya", sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
@@ -287,12 +304,15 @@ div.login-box {
 
 div.login-box h4 {
     font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 0;
 }
 
 .section-1 div.login-box a.login_link {
     font-size: 0.9rem;
     font-weight: normal;
-    width: 80px;
+    /* width: 80px; */
+    width: auto;
     height: 30px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -303,6 +323,14 @@ div.login-box h4 {
     margin-right: 10px;
     -webkit-border-radius: 30px;
             border-radius: 30px;
+    /* No-button styling */
+    background-color: transparent;
+    color: royalblue;
+    text-decoration: underline;
+}
+
+.section-1 div.login-box a.login_link:hover {
+    color: darkblue;
 }
 
 
@@ -815,10 +843,11 @@ button.submit-button {
     -webkit-transform: scaleY(-1) translateY(0);
         -ms-transform: scaleY(-1) translateY(0);
             transform: scaleY(-1) translateY(0);
-    right: 20px;
     width: 50px;
     height: 50px;
+    right: 20px;
     bottom: 0;
+    /* bottom: 0; */
 }
 
 /* FOOTER */

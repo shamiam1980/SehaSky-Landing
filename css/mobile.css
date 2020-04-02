@@ -98,9 +98,9 @@ div.login-box {
 }
 
 .section-1 div.login-box a.login_link {
-  width: 55px;
+  /* width: 55px;
   height: 27px;
-  margin-right: 7px;
+  margin-right: 7px; */
 }
 
 /* SECTION ( 2 ) */
@@ -438,8 +438,8 @@ div.login-box {
   
   .section-1 div.login-box a.login_link {
     font-size: 0.75rem;
-    width: 40px;
-    height: 20px;
+    /* width: 40px;
+    height: 20px; */
   }
 }
 

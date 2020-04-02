@@ -59,6 +59,29 @@
 
 <body style="overflow-x: hidden;">
 
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v6.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat" attribution=install_email page_id="113904373485406" theme_color="#7646ff">
+  </div>
+
+  <!-- Preloader -->
   <div class="preloader">
     <hr />
     <hr />
@@ -170,16 +193,17 @@
           <img class="logo" src="/img/header_logo-gif.gif" alt="logo">
           <h1>SehaSky</h1>
           <h2 class="main-title">أول مجتمع طبي على الإنترنت في الوطن العربي</h2>
-          <a class="know-more_link" href="https://sehasky.com/main/page/create-account?lang=ar">
-            سجل الآن
-          </a>
+          <div class="register_login_box">
+            <a class="know-more_link" href="https://sehasky.com/main/page/create-account?lang=ar">سجل الآن</a>
+            <div class="login-box">
+              <h4>عضو صحة سكاي بالفعل؟</h4>
+              <a class="login_link button is-info" href="https://www.sehasky.com/main/page/login?lang=ar">تسجيل
+                الدخول</a>
+            </div>
+          </div>
         </div>
       </div>
       <a class="english_link button is-info" href="/mobile.html">EN</a>
-      <div class="login-box">
-        <h4>عضو صحة سكاي بالفعل؟</h4>
-        <a class="login_link button is-info" href="https://www.sehasky.com/main/page/login?lang=ar">دخول</a>
-      </div>
     </section>
 
     <section class="section section-2">
