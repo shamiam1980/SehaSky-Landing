@@ -578,8 +578,18 @@ $(document).ready(function () {
 
   // Simple SehaSky logo animation
   setTimeout(function () {
-    $('.section-1 .right .logo').animate({ right: 0 }, 800);
-  }, 2200);
+    $('.section-1 .right .logo').animate({ right: 0 }, 0);
+  }, 0);
+
+  setTimeout(function () {
+    $('.section-1 .right .logo').mouseenter(function () {
+      $(this).attr('src', '../img/header_logo-gif.gif');
+    });
+
+    $('.section-1 .right .logo').mouseleave(function () {
+      $(this).attr('src', '../img/header_logo-white-bg.png');
+    });
+  }, 8500);
 
 
   // Jump to Section-2 on Know More link click
@@ -618,9 +628,14 @@ $(document).ready(function () {
 
   // Redirect to UNA on clicking submit button
   // NOTE Didn't work for mobile page until added in an internal script in mobile.html
-  $('button.submit-button').click(function () {
+  $('button.submit-button-eng').click(function () {
     // document.location = "https://sehasky.com/main/index.php"
-    document.location = "https://sehasky.com/main/page/create-account"
+    document.location = "https://sehasky.com/main/page/create-account?lang=en"
+  })
+
+  $('button.submit-button-ara').click(function () {
+    // document.location = "https://sehasky.com/main/index.php"
+    document.location = "https://sehasky.com/main/page/create-account?lang=ar"
   })
 
   // Footer > Insert dynamic year
