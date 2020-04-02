@@ -815,6 +815,10 @@ div.login-box {
     padding-left: 25px;
     font-size: 0.85em;
   }
+
+  .arrow-up {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -832,11 +836,11 @@ div.login-box {
 
   footer p {
     padding-left: 40px;
-    padding-right: 10px;
+    padding-right: 34px;
   }
 
   .arrow-up {
-    bottom: 25px;
+    /* bottom: 25px; */
   }
 }
 
