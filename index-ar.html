@@ -444,6 +444,18 @@
       });
    </script>
 
+   <!-- Preloader -->
+   <script>
+      $('.section').css('visibility', 'hidden');
+      $(document).ready(function () {
+         setTimeout(function () {
+            $('.section').css('visibility', 'visible');
+            $('#pagepiling').show();
+            $('.preloader').hide();
+         }, 3000);
+      });
+   </script>
+
    <!-- Replace footer English digits with Arabic/Hindi digits -->
 
    <script type="text/javascript">

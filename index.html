@@ -440,6 +440,7 @@
             '<script src="js/vendor/jquery-3.4.1.min.js"><\/script>'
          );
    </script>
+
    <!-- Detect mobile devices -->
    <script type="text/javascript">
       $(function () {
@@ -450,6 +451,18 @@
          } else {
             $('#pagepiling').show();
          }
+      });
+   </script>
+
+   <!-- Preloader -->
+   <script>
+      $('.section').css('visibility', 'hidden');
+      $(document).ready(function () {
+         setTimeout(function () {
+            $('.section').css('visibility', 'visible');
+            $('#pagepiling').show();
+            $('.preloader').hide();
+         }, 3000);
       });
    </script>
 

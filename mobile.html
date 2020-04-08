@@ -454,6 +454,15 @@
       );
   </script>
 
+  <script>
+    // Preloader
+    $('#no-pagepiling').css('visibility', 'hidden');
+    setTimeout(function () {
+      $('#no-pagepiling').css('visibility', 'visible');
+      $('.preloader').hide();
+    }, 2000);
+  </script>
+
   <!-- Vendors -->
 
   <!-- FullPage | Scrolling Technique | Not used -->

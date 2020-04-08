@@ -303,13 +303,13 @@ div.login-box {
 }
 
 div.login-box h4 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: normal;
     margin-bottom: 0;
 }
 
 .section-1 div.login-box a.login_link {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: normal;
     /* width: 80px; */
     width: auto;

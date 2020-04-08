@@ -449,6 +449,15 @@
       );
   </script>
 
+  <script>
+    // Preloader
+    $('#no-pagepiling').css('visibility', 'hidden');
+    setTimeout(function () {
+      $('#no-pagepiling').css('visibility', 'visible');
+      $('.preloader').hide();
+    }, 2000);
+  </script>
+
   <!-- Replace footer English digits with Arabic/Hindi digits -->
   <script type="text/javascript">
     // Delay because year is dynamically generated from JS plugins file

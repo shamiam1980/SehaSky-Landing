@@ -26,11 +26,13 @@
 // CUSTOM
 
 // Preloader
-$('#no-pagepiling').css('visibility', 'hidden');
-setTimeout(function () {
-  $('#no-pagepiling').css('visibility', 'visible');
-  $('.preloader').hide();
-}, 2000);
+// MOVED TO HTML FOR EFFICIENCY IN CASE OF SLOW NETWORKS
+
+// $('#no-pagepiling').css('visibility', 'hidden');
+// setTimeout(function () {
+//   $('#no-pagepiling').css('visibility', 'visible');
+//   $('.preloader').hide();
+// }, 2000);
 
 
 /* __________________________________________________________________________________________________________ */
