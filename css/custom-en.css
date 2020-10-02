@@ -7,6 +7,45 @@ h2.main-title {
   padding-top: 0.75rem;
 }
 
+/* Alo SehaSky Modal */
+
+/* Arabic Text */
+/* .alo-modal, .alo-side {
+  font-family: 'FF Hekaya', 'Changa', 'Quicksand', sans-serif;
+} */
+
+/* English Text */
+.alo-logo {
+  flex-direction: row-reverse;
+  text-align: left;
+  font-size: 40px;
+}
+
+.alo-modal-header h3 {
+  font-size: 22px;
+  top: 0;
+}
+
+.alo-modal-cta {
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1023px) {
+  .alo-modal-header h3 {
+    font-size: 18px;
+  }
+  
+  .alo-modal-cta {
+      font-size: 0.8rem;
+  }
+
+  .alo-iframe, .alo-iframe iframe {
+    height: 300px;
+  }
+}
+
+
 /* SECTION ( 1 ) */
 
 .section-1 a {

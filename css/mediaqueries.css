@@ -220,3 +220,41 @@
     }
   }
 }
+
+/* Alo SehaSky Modal */
+@media only screen and (max-width: 1508px) {
+  .alo-modal-header h2 {
+    font-size: 38px !important;
+  }
+}
+
+@media only screen and (max-width: 1302px) {
+  .alo-modal-header h2 {
+    font-size: 34px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .alo-modal-header h2 {
+    font-size: 26px !important;
+  }
+}
+
+/* Low Desktop Res */
+@media only screen and (max-width: 1400px) and (min-width: 1023px) {
+  .alo-modal-header, .alo-modal-body, .alo-modal-footer {
+    margin-bottom: 0;
+  }
+
+  .alo-modal-header h3 {
+    top: -20px;
+  }
+
+  .alo-modal-cta {
+    width: 8rem;
+    height: 3rem;
+    background-color: #8F3985;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+}

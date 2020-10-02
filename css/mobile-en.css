@@ -2,6 +2,46 @@ html, body {
     font-size: 85%;
 }
 
+/* Alo SehaSky Modal */
+@media screen and (max-width: 768px) {
+    .alo-modal-cta {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 542px) {
+    .alo-modal-header h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .alo-modal-cta {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .alo-modal-header h2 {
+        font-size: 16px !important;
+    }
+
+    .alo-modal-header h3 {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .alo-modal-header h3 {
+        top: 8px;
+    }
+
+    .alo-modal-cta {
+        font-size: 0.8rem;
+    }
+}
+
 /* SECTION ( 1 ) */
 
 div.login-box {

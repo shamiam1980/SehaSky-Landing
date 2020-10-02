@@ -54,6 +54,209 @@ h2.main-title {
     cursor: pointer;
 }
 
+/* MODAL */
+
+.btn.btn-big {
+    font-size: 18px;
+    padding: 15px 20px;
+    min-width: 100px;
+}
+
+.alo-modal-btn-close {
+    color: #fff;
+    font-size: 60px;
+    text-decoration: none;
+    position: absolute;
+    top: -40px;
+    right: -19px;
+}
+.alo-modal-btn-close:hover {
+    color: #8F3985;
+}
+
+.alo-modal:target:before {
+    display: none;
+}
+
+.alo-modal:before {
+    content:"";
+    display: block;
+    background-color: hsla(0,0%,94.9%,.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.alo-modal .alo-modal-dialog {
+    background: #fff;
+    background:url('../img/alo-bg.svg');
+    margin:  0 auto;
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    z-index: 11;
+    width: 60%;
+    height: 80vh;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    top: -2000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 10px 10px 15px -12px rgba(0,0,0,0.21);
+    -moz-box-shadow: 10px 10px 15px -12px rgba(0,0,0,0.21);
+    box-shadow: 10px 10px 15px -12px rgba(0,0,0,0.21);
+}
+
+.alo-modal:target .alo-modal-dialog {
+    top: -100%;
+    -webkit-transform: translate(0, -500%);
+    -ms-transform: translate(0, -500%);
+    transform: translate(0, -500%);
+}
+
+/* .alo-modal-body {
+    padding: 20px;
+}
+*/
+
+.alo-modal-header, .alo-modal-body, .alo-modal-footer {
+    margin-bottom: 25px;
+}
+
+.alo-modal-header {
+    padding: 0 20px;
+}
+
+.alo-modal-header h2 {
+    font-size: 46px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 0.9;
+}
+
+.alo-modal-header h3 {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+.alo-modal-footer {
+    text-align: right;
+}
+
+.alo-modal-cta {
+    display: inline-block;
+    -webkit-border-radius: 2.2rem;
+    border-radius: 2.2rem;
+    outline: none;
+    padding: 0.5rem;
+    width: 12rem;
+    height: 4.6rem;
+    background-color: #8F3985;
+    color: #fff;
+    font-size: 2.2rem;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.alo-modal-cta:hover {
+    background-color: #602859;
+    color: #fff;
+}
+
+.alo-logo {
+    display: flex;
+    align-items: center;
+}
+
+.alo-logo img {
+    width: 150px;
+    padding: 0 20px;
+}
+
+.alo-coronavirus {
+    width: 70px;
+    position: fixed;
+    top: -35px;
+    z-index: -10;
+    left: -35px;
+    mix-blend-mode: saturation;
+}
+
+.alo-iframe,
+.alo-iframe iframe {
+    width:500px;
+}
+
+.alo-side {
+    /* position: absolute;
+    bottom: 5%;
+    right: 0;
+    width: 100%;
+    max-width: 380px;
+    min-height: 148px;
+    transform: translateX(100%);
+    border-top: 5px solid#FF7FAA;
+    background-color: #fff;
+    box-shadow: 0 0 0px rgba(34,34,34,0.25);
+    transition: 150ms cubic-bezier(1, 0, 0, 1);
+    pointer-events: all;
+    top: auto;
+    bottom: 10%;
+    left: auto;
+    right: -4px;
+    min-height: 153px;
+    border-color: #fff; */
+    z-index: 20;
+    display: none;
+    transition: all 0.2s ease-in-out;
+    position: fixed;
+    bottom: 80px;
+    right: -6px;
+}
+
+.alo-side:hover {
+    /* right: -1px; */
+    right: -2px;
+}
+
+.alo-side-button {
+    /* position: absolute;
+    right: 100%;
+    top: -5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #FF7FAA;
+    left: auto;
+    right: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; */
+    background: #F7971E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+}
+
+.alo-side-logo {
+    width: 45px;
+}
+
+
 /* SECTION ( 1 ) */
 
 section.section-1 {

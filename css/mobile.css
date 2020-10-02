@@ -37,6 +37,122 @@ div {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Alo SehaSky Modal */
+.alo-modal .alo-modal-dialog {
+  width: 80%;
+  padding-top: 40px;
+  justify-content: flex-start;
+}
+
+.alo-modal-header h2 {
+  line-height: 1;
+  padding-top: 20px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.alo-logo {
+  flex-direction: column;
+}
+
+.alo-logo img {
+  width: auto;
+  max-height: 150px;
+}
+
+.alo-modal-body {
+  padding-top: 30px;
+  overflow: hidden;
+  /* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+}
+
+.alo-iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* .alo-side {
+  min-height: 120px;
+  bottom: 0;
+} */
+
+@media screen and (max-width: 768px) {
+  .alo-modal .alo-modal-dialog {
+    padding-top: 20px;
+  }
+  
+  .alo-modal-cta {
+    width: 10rem;
+    height: 3.6rem;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .alo-logo img {
+    max-height: 100px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .alo-modal-header h2 {
+    font-size: 30px;
+  }
+
+  .alo-modal-header h3 {
+    top: 0;
+  }
+
+  .alo-logo img {
+    max-height: 85px;
+  }
+
+  .alo-modal-cta {
+    width: 8rem;
+    height: 3rem;
+    padding: 0;
+    font-size: 1.5rem;
+    padding-top: 6px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .alo-modal-header h2 {
+    font-size: 25px;
+  }
+  .alo-modal-header h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .alo-modal .alo-modal-dialog {
+    padding-top: 10px;
+  }
+
+  .alo-modal-cta {
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .alo-modal-header h2 {
+    font-size: 20px;
+  }
+  .alo-modal-header h3 {
+    font-size: 16px;
+  }
+}
+
 /* SECTION  ( 1 ) */
 
 .section-1 {

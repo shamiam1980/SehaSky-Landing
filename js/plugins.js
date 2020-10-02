@@ -58,6 +58,38 @@ $(document).ready(function () {
   // //methods
   // $.fn.fullpage.setAllowScrolling(true);
 
+  // Alo SehaSky Modal
+  setTimeout(function () {
+    $('.alo-modal-dialog').animate({ top: "50px" });
+  }, 4000);
+
+  $('.alo-modal-btn-close').click(function () {
+    $('.alo-modal-dialog').animate({ top: "-2200px" });
+    setTimeout(function () {
+      $('.alo-modal').hide();
+      $('.alo-side').show();
+    }, 300);
+  });
+
+  $('html').click(function (e) {
+    if (!$(event.target).closest('.alo-modal-dialog').length && !$(event.target).closest('.alo-side').length && !$(event.target).is('.alo-modal-dialog') && !$(event.target).is('.alo-side')) {
+      $('.alo-modal-dialog').animate({ top: "-2200px" });
+      setTimeout(function () {
+        $('.alo-modal').hide();
+        $('.alo-side').show();
+      }, 200);
+    }
+  });
+
+  $('.alo-side').click(function () {
+    $(this).hide();
+    setTimeout(function () {
+      $('.alo-modal').show();
+      $('.alo-modal-dialog').animate({ top: "50px" });
+    }, 250);
+  });
+
+
   // PagPiling.js Plugin Init
   $('#pagepiling').pagepiling({
     direction: 'vertical',
@@ -583,14 +615,15 @@ $(document).ready(function () {
     $('.section-1 .right .logo').animate({ right: 0 }, 0);
   }, 0);
 
+  // Replay logo animation on mouse hover
   setTimeout(function () {
     $('.section-1 .right .logo').mouseenter(function () {
       $(this).attr('src', '../img/header_logo-gif.gif');
     });
 
-    $('.section-1 .right .logo').mouseleave(function () {
-      $(this).attr('src', '../img/header_logo-white-bg.png');
-    });
+    //   $('.section-1 .right .logo').mouseleave(function () {
+    //     $(this).attr('src', '../img/header_logo-white-bg.png');
+    //   });
   }, 8500);
 
 
@@ -632,12 +665,12 @@ $(document).ready(function () {
   // NOTE Didn't work for mobile page until added in an internal script in mobile.html
   $('button.submit-button-eng').click(function () {
     // document.location = "https://sehasky.com/main/index.php"
-    document.location = "https://sehasky.com/main/page/create-account?lang=en"
+    document.location = "https://app.sehasky.com/?lang=en"
   })
 
   $('button.submit-button-ara').click(function () {
     // document.location = "https://sehasky.com/main/index.php"
-    document.location = "https://sehasky.com/main/page/create-account?lang=ar"
+    document.location = "https://app.sehasky.com/?lang=ar"
   })
 
   // Footer > Insert dynamic year

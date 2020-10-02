@@ -77,6 +77,37 @@ $(document).ready(function () {
   //   direction: 'alternate'
   // });
 
+  // Alo SehaSky Modal
+  setTimeout(function () {
+    $('.alo-modal-dialog').animate({ top: "50px" });
+  }, 4000);
+
+  $('.alo-modal-btn-close').click(function () {
+    $('.alo-modal-dialog').animate({ top: "-2200px" });
+    setTimeout(function () {
+      $('.alo-modal').hide();
+      $('.alo-side').show();
+    }, 300);
+  });
+
+  $('html').click(function (e) {
+    if (!$(event.target).closest('.alo-modal-dialog').length && !$(event.target).closest('.alo-side').length && !$(event.target).is('.alo-modal-dialog') && !$(event.target).is('.alo-side')) {
+      $('.alo-modal-dialog').animate({ top: "-2200px" });
+      setTimeout(function () {
+        $('.alo-modal').hide();
+        $('.alo-side').show();
+      }, 200);
+    }
+  });
+
+  $('.alo-side').click(function () {
+    $(this).hide();
+    setTimeout(function () {
+      $('.alo-modal').show();
+      $('.alo-modal-dialog').animate({ top: "50px" });
+    }, 250);
+  });
+
   // SECTION ( 1 )
 
   // SOLVE CHROME ANDROID TASKBAR WITH 100VH HEIGHT
@@ -702,9 +733,9 @@ $(document).ready(function () {
   // });
 
   // Force re-render when orientation suddenly changes to Landscape mode
-  window.onorientationchange = function () {
-    window.location.reload();
-  }
+  // window.onorientationchange = function () {
+  //   window.location.reload();
+  // }
 
   // SECTION ( 1 )
 
@@ -774,9 +805,14 @@ $(document).ready(function () {
 
   // Redirect to UNA on clicking submit button
   // NOTE Didn't work for mobile page until added in an internal script in mobile.html
-  $('button.submit-button').click(function () {
+  $('button.submit-button-eng-mob').click(function () {
     // document.location = "https://sehasky.com/main/index.php"
-    document.location = "https://sehasky.com/main/page/create-account"
+    document.location = "https://app.sehasky.com/?lang=en"
+  });
+
+  $('button.submit-button-ara-mob').click(function () {
+    // document.location = "https://sehasky.com/main/index.php"
+    document.location = "https://app.sehasky.com/?lang=ar"
   });
 
   // Jump to first Section on last arrow click
